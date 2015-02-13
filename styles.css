@@ -137,13 +137,13 @@
     margin-bottom: 5px;
 }
 .profileimage {
-    margin: 0 auto;
     width: 33.3333%;
     float: left;
 }
 .profileimage img {
     max-height: 300px;
     max-width: 300px;
+    display: inline-block;
 }
 .profileinfo {
     width: 66.66666%;
