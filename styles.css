@@ -101,3 +101,18 @@
 #menu > ul > li > a:hover:after {
   background: #47c9af;
 }
+#main {
+    width: 66.6666%;
+    float: left;
+}
+#sidenav {
+    width: 33.3333%;
+    float: left;
+}
+#sidenav ul li {
+    list-style: none;
+    height: 40px;
+}
+#sidenav ul li a {
+    list-style: none;
+}
