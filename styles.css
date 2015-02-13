@@ -140,7 +140,7 @@
     width: 33.3333%;
     float: left;
 }
-.profileimage img {
+.profileimage > img {
     max-height: 300px;
     max-width: 300px;
     display: inline-block;
