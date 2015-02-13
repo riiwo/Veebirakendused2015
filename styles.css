@@ -104,6 +104,7 @@
 #main {
     width: 66.6666%;
     float: left;
+    padding: 5px;
 }
 #leftnav {
     width: 33.3333%;
@@ -135,10 +136,17 @@
     overflow: hidden;
 }
 .profileimage {
+    margin: 0 auto;
     width: 33.3333%;
     float: left;
+    padding: 5px;
+}
+.profileimage img {
+    max-height: 300px;
+    max-width: 300px;
 }
 .profileinfo {
     width: 66.66666%;
     float: left;
+    padding: 5px;
 }
