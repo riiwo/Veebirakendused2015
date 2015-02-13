@@ -105,14 +105,14 @@
     width: 66.6666%;
     float: left;
 }
-#sidenav {
+#leftnav {
     width: 33.3333%;
     float: left;
 }
-#sidenav ul li {
+#leftnav ul li {
     list-style: none;
     height: 40px;
 }
-#sidenav ul li a {
+#leftnav ul li a {
     list-style: none;
 }
