@@ -140,11 +140,12 @@
     margin: 0 auto;
     width: 33.3333%;
     float: left;
-    padding: 5px;
 }
 .profileimage img {
     max-height: 300px;
     max-width: 300px;
+    
+    padding: 5px;
 }
 .profileinfo {
     width: 66.66666%;
