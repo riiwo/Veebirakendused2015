@@ -144,8 +144,6 @@
 .profileimage img {
     max-height: 300px;
     max-width: 300px;
-    
-    padding: 5px;
 }
 .profileinfo {
     width: 66.66666%;
