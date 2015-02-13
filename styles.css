@@ -110,7 +110,7 @@
     float: left;
 }
 #leftnav ul {
-    padding: 0;
+    padding: 5px;
     margin: 0;
     line-height: 40px;
 }
@@ -119,6 +119,11 @@
     height: 40px;
     text-align: center;
     background-color: #47c9af;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+#leftnav ul li:hover{
+    background-color: #98efdd;
 }
 #leftnav ul li a {
     list-style: none;
