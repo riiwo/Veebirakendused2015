@@ -134,6 +134,7 @@
 .profiletop {
     overflow: hidden;
     background-color: #c7e8e1;
+    margin-top: 5px;
     margin-bottom: 5px;
 }
 .profileimage {
@@ -143,7 +144,8 @@
 .profileimage > img {
     max-height: 300px;
     max-width: 300px;
-    display: inline-block;
+    display: block;
+    margin: auto;
 }
 .profileinfo {
     width: 66.66666%;
@@ -151,4 +153,5 @@
 }
 .profilebottom {
     background-color: #c7e8e1;
+    padding: 5px;
 }
