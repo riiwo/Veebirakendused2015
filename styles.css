@@ -131,3 +131,14 @@
     color: white;
     font-weight: 500;
 }
+.profiletop {
+    overflow: hidden;
+}
+.profileimage {
+    width: 33.3333%;
+    float: left;
+}
+.profileinfo {
+    width: 66.66666%;
+    float: left;
+}

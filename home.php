@@ -9,5 +9,7 @@
         <li><a href="#">MIDAGI VEEL</a></li>
     </ul>
 </div>
-<div id="main"></div>
+<div id="main">
+    <?php include 'profile.php'; ?>
+</div>
 <?php include 'footer.php';?>
