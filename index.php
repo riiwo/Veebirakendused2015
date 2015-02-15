@@ -11,45 +11,46 @@
                 <p>Curabitur ut cursus nisl. Cras nec dignissim lorem. Curabitur auctor, leo eget pharetra placerat, velit mi tristique diam, vitae aliquam arcu orci nec odio. Mauris blandit dictum condimentum. Proin a arcu viverra, lacinia odio a, dignissim tortor. Fusce vel porttitor ipsum. Etiam quis diam nec orci sollicitudin scelerisque eu porttitor libero.</p>
                 <div class="resultchart">
                     <h4>Populaarsemad erakonnad</h4>
+                    
                     <div id="chart_div"></div>
                     <!--Load the AJAX API-->
                     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
                     <script type="text/javascript">
 
-      // Load the Visualization API and the piechart package.
-      google.load('visualization', '1.0', {'packages':['corechart']});
+                      // Load the Visualization API and the piechart package.
+                      google.load('visualization', '1.0', {'packages':['corechart']});
 
-      // Set a callback to run when the Google Visualization API is loaded.
-      google.setOnLoadCallback(drawChart);
+                      // Set a callback to run when the Google Visualization API is loaded.
+                      google.setOnLoadCallback(drawChart);
 
-      // Callback that creates and populates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
-      function drawChart() {
+                      // Callback that creates and populates a data table,
+                      // instantiates the pie chart, passes in the data and
+                      // draws it.
+                      function drawChart() {
 
-        // Create the data table.
-        var data = new google.visualization.DataTable();
-        data.addColumn('string', 'Topping');
-        data.addColumn('number', 'Slices');
-        data.addRows([
-          ['IRL', 3],
-          ['Sotsiaaldemokraadid', 1],
-          ['Reformierakond', 1],
-          ['Keskerakond', 1],
-          ['Rohelised', 2]
-        ]);
+                        // Create the data table.
+                        var data = new google.visualization.DataTable();
+                        data.addColumn('string', 'Topping');
+                        data.addColumn('number', 'Slices');
+                        data.addRows([
+                          ['IRL', 3],
+                          ['Sotsiaaldemokraadid', 1],
+                          ['Reformierakond', 1],
+                          ['Keskerakond', 1],
+                          ['Rohelised', 2]
+                        ]);
 
-        // Set chart options
-        var options = {'title':'',
-                       'backgroundColor': '#c7e8e1',
-                       'width':"100%",
-                       'height':150};
+                        // Set chart options
+                        var options = {'title':'',
+                                       'backgroundColor': '#c7e8e1',
+                                       'width':"100%",
+                                       'height':150};
 
-        // Instantiate and draw our chart, passing in some options.
-        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
-        chart.draw(data, options);
-      }
-    </script>
+                        // Instantiate and draw our chart, passing in some options.
+                        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+                        chart.draw(data, options);
+                      }
+                      </script>
                 </div>
                 <div class="resultchart">
                     <h4>Populaarsemad inimesed</h4>
