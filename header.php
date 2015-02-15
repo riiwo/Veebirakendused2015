@@ -7,6 +7,7 @@
 <meta http-equiv="description" content="page description" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <style type="text/css">@import "styles.css";</style>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
 </head>
 
 <body>
