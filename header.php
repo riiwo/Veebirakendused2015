@@ -21,10 +21,10 @@
 </div>
 <div id="menu">
 <ul>
-   <li class='active'><a href='#'>Home</a></li>
-   <li><a href='#'>Products</a></li>
-   <li><a href='#'>Company</a></li>
-   <li><a href='#'>Contact</a></li>
+   <li class='active'><a href='/index.php'>KODU</a></li>
+   <li><a href='/profile.php'>PROFIIL</a></li>
+   <li><a href='/faq.php'>FAQ</a></li>
+   <li><a href='/Kaart.html'>KAART</a></li>
 </ul>
 </div>
 </div>
