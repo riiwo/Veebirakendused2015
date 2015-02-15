@@ -26,6 +26,7 @@
    <li><a href='/faq.php'>FAQ</a></li>
    <li><a href='/Kaart.html'>KAART</a></li>
    <li><a href='/registrate.php'>REGISTREERIMINE</a></li>
+   <li><a href='/home.php'>SISSELOGITU KODU</a></li>
 </ul>
 </div>
 </div>
