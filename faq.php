@@ -13,13 +13,8 @@
                 <li>Küsimus 7</li>
                 <li>Küsimus 8</li>
                 <li>Küsimus 9</li>
-                <li>Küsimus 10</li>
-
             </ul>
             <div class="resp-tabs-container hor_1">
-                <div>
-                    Lorem ipsum dolor sit amet, lerisque commodo. Nam porta cursus lectusconsectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales sce. Proin nunc erat, gravida a facilisis quis, ornare id lectus.
-                </div>
                 <div>
                     Lorem consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis.
                 </div>
