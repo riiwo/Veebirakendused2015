@@ -25,6 +25,7 @@
    <li><a href='/profile.php'>PROFIIL</a></li>
    <li><a href='/faq.php'>FAQ</a></li>
    <li><a href='/Kaart.html'>KAART</a></li>
+   <li><a href='/registrate.php'>REGISTREERIMINE</a></li>
 </ul>
 </div>
 </div>

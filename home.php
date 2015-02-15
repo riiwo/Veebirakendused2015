@@ -10,6 +10,6 @@
     </ul>
 </div>
 <div id="main">
-
+     <?php include 'profile2.php';?>
 </div>
 <?php include 'footer.php';?>
