@@ -8,6 +8,9 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <style type="text/css">@import "styles.css";</style>
 <link href='http://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css " />
+<script src="js/jquery-1.9.1.min.js"></script>
+<script src="js/easyResponsiveTabs.js"></script>
 </head>
 
 <body>
