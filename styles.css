@@ -138,7 +138,58 @@
     color: white;
     font-weight: 500;
 }
+/*Home*/
 
+.contentslider, .resultslider {
+    margin: 5px;
+    background-color: #c7e8e1;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    
+}
+
+.custombtn1 {
+    height: 40px;
+    text-align: center;
+    background-color: #47c9af;
+    cursor: pointer;
+    color: white;
+    line-height: 40px;
+    width: 200px;
+}
+.custombtn1 > a {
+    text-decoration: none;
+    color: white;
+}
+.custombtn1:hover {
+    background-color: #98efdd;
+}
+.left25 {
+    float: left;
+    margin-left: 25%;
+}
+.right25 {
+    float: right;
+    margin-right: 25%
+}
+.resultchart {
+    width: 33.333333%;
+    float: left;
+}
+.resultchart .protsent{
+    padding: 0px;
+    margin: 0px;
+    font-size: 80px;
+}
+.resultchart table {
+    width: 100%;
+    text-align: left;
+    margin: 10px;
+}
+#chartdiv {
+    background-color: #c7e8e1;
+}
 /*Profile*/
 
 .profile {
