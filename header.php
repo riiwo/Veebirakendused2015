@@ -24,7 +24,7 @@
    <li class='active'><a href='/index.php'>KODU</a></li>
    <li><a href='/profile.php'>PROFIIL</a></li>
    <li><a href='/faq.php'>KKK</a></li>
-   <li><a href='/Kaart.html'>KAART</a></li>
+   <li><a href='/Kaart.html'>Statistika</a></li>
    <li><a href='/registrate.php'>REGISTREERIMINE</a></li>
    <li><a href='/home.php'>SISSELOGITU KODU</a></li>
 </ul>
