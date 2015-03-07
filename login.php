@@ -16,13 +16,7 @@
             data-scope="https://www.googleapis.com/auth/plus.login">
           </span>
         </span>
-        function signinCallback(authResult) {
-          if (authResult['status']['signed_in']) {
-            document.getElementById('signinButton').setAttribute('style', 'display: none');
-          } else {
-            console.log('Sign-in state: ' + authResult['error']);
-  }
-}
+       
     </form>  
 </div>
 <?php include 'footer.php';?>
