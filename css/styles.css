@@ -1,0 +1,248 @@
+/*Page*/
+
+#page {
+  font-family:'Raleway', sans-serif;
+  max-width: 1268px;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+/*Header*/
+.top-wrapper {
+    overflow: hidden;
+}
+.header-logo {
+    width: 75%;
+    float: left;
+}
+.header-logo img {
+    max-width: 100%;
+}
+.logging {
+    width: 25%;
+    float:left;
+}
+.logging a {
+    text-decoration: none;
+}
+.logging .custombtn1 {
+    float: right;
+    margin-right: 5px;
+}
+
+/*Menu*/
+
+@import url(http://fonts.googleapis.com/css?family=Raleway);
+
+.menu-wrapper {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.menu {
+    height: 50px;
+    background-color: #47c9af;
+    z-index: 2;
+}
+.menu-link {
+    float:left;
+    width: 16.666666%;
+    text-align: center;
+}
+.menu-link a {
+    display: block;
+    width: 100%;
+    color: #ededed;
+    line-height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.menu-link a:hover {
+    width: 100%;
+    color: #ededed;
+    line-height: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #98efdd;
+}
+.menu-link a:active {
+    background-color: #98efdd;
+}
+
+.main {
+    width: 66.6666%;
+    float: left;
+}
+.leftnav {
+    width: 33.3333%;
+    float: left;
+}
+.leftnav ul {
+    padding: 5px;
+    margin: 0px;
+    line-height: 40px;
+    background-color: #c7e8e1;
+}
+.leftnav ul li {
+    list-style: none;
+    height: 40px;
+    text-align: center;
+    background-color: #47c9af;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.leftnav ul li:hover{
+    background-color: #98efdd;
+}
+.leftnav ul li a {
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+/*Home*/
+
+.contentslider, .resultslider, .container {
+    margin: 5px;
+    background-color: #c7e8e1;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+    font-family: Raleway, sans-serif;
+    
+}
+.container {
+    padding-bottom: 15px;
+    text-align: left;
+}
+.custombtn1 {
+    display: block;
+    margin-top: 10px;
+    height: 40px;
+    text-align: center;
+    background-color: #47c9af;
+    cursor: pointer;
+    color: white;
+    line-height: 40px;
+    width: 200px;
+}
+.custombtn1 > a {
+    text-decoration: none;
+    color: white;
+}
+.custombtn1:hover {
+    background-color: #98efdd;
+}
+.left25 {
+    float: left;
+    margin-left: 25%;
+}
+.right25 {
+    float: right;
+    margin-right: 25%
+}
+.resultchart {
+    width: 33.333333%;
+    float: left;
+}
+.resultchart .protsent{
+    padding: 0px;
+    margin: 0px;
+    font-size: 80px;
+}
+.resultchart table {
+    width: 100%;
+    text-align: left;
+    margin: 10px;
+}
+#chartdiv {
+    background-color: #c7e8e1;
+}
+/*faq*/
+.question-container {
+    margin-bottom: 5px;
+    background-color: #ededed;
+    text-align: left;
+}
+.question-container p, .question-container h4 {
+    margin: 0;
+    padding: 0;
+}
+.question{
+    display: block;
+    padding: 5px;
+    border: 2px solid #47c9af;
+    cursor: pointer;
+    background-color: #47c9af;
+    color: white;
+}
+.question + input {
+    display: none;
+}
+.question + input + * {
+    display: none;
+}
+.question + input:checked + * {
+    display: block;
+}
+
+.answer {
+    padding: 5px;
+    border: 1px solid #47c9af;
+    border-top: 0;
+}
+
+
+/*Profile*/
+
+.profile {
+    padding: 5px;
+    text-align: left;
+    border: 3px solid #47c9af;
+
+}
+
+.profile-top {
+  width: 100%
+}
+
+.profile-image {
+  width: 23%;
+  float: left;
+}
+
+.profile-description {
+  width:77%;
+  float: right;
+}
+
+.profile-description h6,
+.profile-info h6 {
+  font-size: 15px;
+  margin:0px 0px 10px 0;
+}
+
+.profile-description p,
+.profile-info p {
+  font-size: 14px;
+  margin: 0px 0px 10px 0px;
+}
+
+.profile-bottom {
+  width:100%;
+}
+
+.profile-info {
+  width: 100%;
+}
+
+
+.footer {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #47c9af;
+    text-align: center;
+    color: white;
+}
+
