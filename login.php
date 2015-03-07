@@ -13,7 +13,7 @@
             data-clientid="911888577888-otoae6ai5f2k9q7ni01giocn3onujl4o.apps.googleusercontent.com"
             data-cookiepolicy="single_host_origin"
             data-requestvisibleactions="http://schema.org/AddAction"
-            data-scope="https://www.googleapis.com/auth/plus.login">
+            data-scope="profile">
           </span>
         </span>
        
