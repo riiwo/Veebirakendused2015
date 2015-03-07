@@ -1,5 +1,4 @@
 <?php include 'header.php';?>
-	<div class="main">
        <div class="container">
           <div class="question-container">
               <label class="question" for="answer-1"><h4>Küsimus 1</h4></label>
@@ -19,5 +18,4 @@
         
            
        </div>
-    </div>
 <?php include 'footer.php';?>
