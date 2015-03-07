@@ -68,7 +68,7 @@
         </div>
         <div class="logging">
            <div class="login">
-               <a href=""><div class="custombtn1">LOGI SISSE</div></a>
+               <a href="./login.php"><div class="custombtn1">LOGI SISSE</div></a>
            </div>
            <div class="register">
                <a href='./registrate.php'><div class="custombtn1">REGISTREERU</div></a>
@@ -77,12 +77,10 @@
     </div>
     <div class="menu-wrapper">
         <div class="menu">
-            <div class="menu-link"><a href='./index.php'>KODU</a></div>
-            <div class="menu-link"><a href='./profile.php'>PROFIIL</a></div>
+            <div class="menu-link"><a href='./index.php'>INDEX</a></div>
             <div class="menu-link"><a href='./faq.php'>KKK</a></div>
             <div class="menu-link"><a href='./kaart.php'>Statistika</a></div>
-            <div class="menu-link"><a href='./registrate.php'>REGISTREERIMINE</a></div>
-            <div class="menu-link"><a href='./home.php'>SISSELOGITU KODU</a></div>
+            <div class="menu-link"><a href='./home.php'>KODU</a></div>
         </div>
     </div>
 </div>
