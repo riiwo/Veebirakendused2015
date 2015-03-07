@@ -9,6 +9,7 @@
 <style type="text/css">@import "css/styles.css";</style>
 <script src="js/jquery-1.9.1.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js"></script>
+<script src="https://apis.google.com/js/client:platform.js" async defer></script>
 <script>
     var valimisringkond = {};
     valimisringkond['Tallinn'] = {
