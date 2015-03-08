@@ -1,5 +1,5 @@
 <?php include 'header.php';?>
-
+<?php
 include('sign_in.php'); // Includes Login Script
 
 if(isset($_SESSION['login_user'])){
