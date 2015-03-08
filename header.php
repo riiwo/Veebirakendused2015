@@ -25,7 +25,7 @@
                <a href='./registrate.php'><div class="custombtn1">REGISTREERU</div></a>
            </div>
             <div class="register">
-               <a href='log_out.php'><div class="custombtn1">LOGI VÄlJA</div></a>
+               <a href='logout.php'><div class="custombtn1">LOGI VÄlJA</div></a>
            </div>
         </div>
     </div>
