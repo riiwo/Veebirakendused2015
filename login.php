@@ -15,6 +15,9 @@ header("location: home.php");
         <label>Password :</label>
         <input id="password" name="password" type="password">
         <input name="submit" type="submit" value="Login ">
+        <a href='http://localhost:8080/valimised/logifb.php' style='text-decoration:none'>
+        <br><br>
+        <img src='images/fblogin.png' style='border:0;'></a>
         <span><?php echo $error; ?></span>
     </form>
 </div>
