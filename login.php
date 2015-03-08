@@ -5,6 +5,7 @@ include('sign_in.php'); // Includes Login Script
 if(isset($_SESSION['login_user'])){
 header("location: home.php");
 }
+ini_set('display_errors', 1);
 ?>
 <div class="container">
    <div id="login">
