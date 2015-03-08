@@ -1,36 +1,76 @@
 <div class="profile">
-    <div class="profile-top clearfix">
-        <div class="profile-header">
-            <h3>69. Riivo Parts</h3>
-        </div>
-        <div class="profile-image">
-            <img src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xpa1/v/t1.0-1/c60.60.755.755/s160x160/156199_2557259708674_430759911_n.jpg?oh=ab52561d7ed861dcd7d935fc7362c18b&oe=55960A14&__gda__=1431751446_9f3e00e428531a920deac3e380956352" alt="Riivo Parts">
-        </div>
-        <div class="profile-description">
-            <h6>Ametid:</h6>
-            <p>Riigikogu liige, erakonna aseesimees, ettevõtja, meelelahutaja</p>
-            <h6>Erakond:</h6>
-            <p>Reformierakond</p>
-            <h6>Piirkond:</h6>
-            <p>Nr 10 Tartu linn</p>
-        </div>
-    </div>
-    <div class="profile-bottom">
-    <div class="profile-info">
-            <h6>Kontaktid</h6>
-            <p><b>E-post:</b> jaganraha@gmail.com</p>
-            <p><b>Facebook:</b> https://www.facebook.com/riiwo?fref=ts </p>
-            <p><b>Telefon:</b> 5696969 </p>
-            <h6>Kirjeldus</h6>
-            <p><b>Sünniaeg ja -koht:</b> 28. juunil 1988 Riia </p>
-            <p><b>Perekonnaseis:</b> vabaabielus, 12 poega </p>
-            <p><b>Haridus:</b>  Nõo Reaalgümnaasium;  Tartu Ülikool; matemaatika (cum laude) 2014</p>
-            <p><b>Erakond:</b> Reformierakond 2012-</p>
-            <p><b>Valimisringkond:</b> Tartu linn</p>
-            <p><b>Töökohad:</b> President, peaminister, riigikogu liige</p>
-            <p><b>Esinduskogud:</b> XII Riigikogu</p>
-            <p><b>Keeled:</b> inglise, vene, eesti ja hiina keel</p>
-            <p><b>Huvialad:</b> matemaatika, matemaatika ja veel kord matemaatika </p>
-        </div>
-    </div>
+   <form action="">
+    <h4>Ametid:</h4>
+    <input type="text" name="ametid">
+    <p>Hetkel: Riigikogu liige, erakonna aseesimees, ettevõtja, meelelahutaja</p>
+
+    <h4>Erakond:</h4>
+    <select name="party">
+        <option value="#" selected></option>
+        <option value="#">Erakonnata</option>
+        <option value="#">Eesti Iseseisvuspartei</option>
+        <option value="#">Eesti Keskerakond</option>
+        <option value="#">Eesti Konservatiivne Rahvaerakond</option>
+        <option value="#">Eesti Reformierakond</option>
+        <option value="#">Eesti Vabaduspartei – Põllumeeste Kogu</option>
+        <option value="#">Eesti Vabaerakond</option>
+        <option value="#">Eestimaa Ühendatud Vasakpartei</option>
+        <option value="#">Erakond Eestimaa Rohelised</option>
+        <option value="#">Erakond Isamaa ja Res Publica Liit</option>
+        <option value="#">Rahva Ühtsuse Erakond</option>
+        <option value="#">Sotsiaaldemokraatlik Erakond</option>
+    </select>
+    <p>Hetkel: Reformierakond</p>
+    
+    <h4>Piirkond:</h4>
+    <select type="region" name="candidate_number">
+        <option value="#" selected></option>
+        <option value="#">nr 1 (Tallinna Haabersti, Põhja-Tallinna ja Kristiine linnaosa)</option>
+        <option value="#">nr 2 (Tallinna Kesklinna, Lasnamäe ja Pirita linnaosa)</option>
+        <option value="#">nr 3 (Tallinna Mustamäe ja Nõmme linnaosa)</option>
+        <option value="#">nr 4 (Harju- ja Raplamaa)</option>
+        <option value="#">nr 5 (Hiiu-, Lääne- ja Saaremaa)</option>
+        <option value="#">nr 6 (Lääne-Virumaa)</option>
+        <option value="#">nr 7 (Ida-Virumaa)</option>
+        <option value="#">nr 8 (Järva- ja Viljandimaa)</option>
+        <option value="#">nr 9 (Jõgeva- ja Tartumaa)</option>
+        <option value="#">nr 10 (Tartu linn)</option>
+        <option value="#">nr 11 (Võru-, Valga- ja Põlvamaa)</option>
+        <option value="#">nr 12 (Pärnumaa)</option>
+    </select>
+    <p>Hetkel: Nr 10 Tartu linn</p>
+    
+    <h4>E-post </h4>
+    <input type="text" name="candidate_number" />
+    <p>Hetkel: jaganraha@gmail.com</p>
+    
+    <h4>Facebook </h4>
+    <input type="text" name="candidate_number" />
+    <p>Hetkel: https://www.facebook.com/riiwo?fref=ts</p>
+    
+    <h4>Telefon </h4>
+    <input type="text" name="candidate_number" />
+    <p>Hetkel: 5696969</p>
+    
+    <h4>Esinduskogud </h4>
+    <input type="text" name="candidate_number" />
+    <p>Hetkel: XII Riigikogu</p>
+    
+    <h4>Keeled </h4>
+    <input type="text" name="candidate_number" />
+    <p>Hetkel: inglise, vene, eesti ja hiina keel</p>
+    
+    <h4>Huvialad </h4>
+    <input type="text" name="candidate_number" />
+    <p>Hetkel: matemaatika, matemaatika ja veel kord matemaatika</p>
+    
+    <h4>Eelnevad töökohad </h4>
+    <input type="text" name="candidate_number" />
+    <p>Hetkel: President, peaminister, riigikogu liige</p>
+    
+    <h4>Vaheta pilti</h4>
+    <input type="file" name="fileupload" accept="image/*" />
+    
+    <input type="button" class="custombtn1" value="UUENDA">
+    </form>
 </div>
