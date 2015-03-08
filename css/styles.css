@@ -94,6 +94,7 @@
     background-color: #98efdd;
 }
 .leftnav ul li a {
+    display: block;
     list-style: none;
     text-decoration: none;
     color: white;
