@@ -13,13 +13,13 @@ $dbConnected = mysql_connect($server,$username,$password);
 $dbSelected = mysql_connect($databaseName,$dbConnected);
 
 if($dbConnected){
-	echo "mysql uhendatud";
+	echo "mysql uhendatud <br/>";
 	if($dbSelected){
-		echo "db connected";
+		echo "db connected <br/>";
 	} else {
-		echo "db connection faield";
+		echo "db connection failed <br/>";
 	}
 } else {
-	echo "mysql connection faield";
+	echo "mysql connection failed  <br/>";
 }
 ?>
