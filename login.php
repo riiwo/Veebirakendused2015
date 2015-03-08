@@ -1,22 +1,22 @@
 <?php include 'header.php';?>
+<?php
+include('sign_in.php'); // Includes Login Script
+
+if(isset($_SESSION['login_user'])){
+header("location: home.php");
+}
+?>
 <div class="container">
-    <form action="POST">
-        <p>Kasutajanimi:</p>
-        <input type="text">
-        <p>Parool:</p>
-        <input type="password">
-        <input type="button" action="post"  class="custombtn1" value="LOGI SISSE">
-        <span id="signinButton">
-          <span
-            class="g-signin"
-            data-callback="signinCallback"
-            data-clientid="911888577888-otoae6ai5f2k9q7ni01giocn3onujl4o.apps.googleusercontent.com"
-            data-cookiepolicy="single_host_origin"
-            data-requestvisibleactions="http://schema.org/AddAction"
-            data-scope="https://www.googleapis.com/auth/userinfo.profile">
-          </span>
-        </span>
-       
-    </form>  
+   <div id="login">
+    <h2>Login Form</h2>
+    <form action="" method="post">
+        <label>E-mail :</label>
+        <input id="email" name="email" type="text">
+        <label>Password :</label>
+        <input id="password" name="password" type="password">
+        <input name="submit" type="submit" value="Login ">
+        <span><?php echo $error; ?></span>
+    </form>
+</div>
 </div>
 <?php include 'footer.php';?>
