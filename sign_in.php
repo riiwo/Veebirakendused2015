@@ -25,8 +25,8 @@ if(isset($_POST['submit'])){
 	{
 		$email = $_POST['email'];
 		$password = $_POST['password'];
-		$query = mysqli_query("select * from user where password='$password'
-			and email='$email'",$dbConnected);
+		$query = mysqli_query($dbConnected,"select * from user where password='$password'
+			and email='$email'");
 		$rows = mysqli_num_rows($query);
 		if($rows == 1){
 			$_SESSION['login_user']=$email;
