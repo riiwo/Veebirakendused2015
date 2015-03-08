@@ -10,16 +10,16 @@ $password="3fef7f46";
 $databaseName = "valimised";
 
 $dbConnected = mysql_connect($server,$username,$password);
-$dbSelected = mysql_connect($databaseName,$dbConnected);
+$dbSelected = mysql_select_db($databaseName,$dbConnected);
 
 if($dbConnected){
-	echo "mysql uhendatud <br/>";
+	echo "mysql uhendatud";
 	if($dbSelected){
-		echo "db connected <br/>";
+		echo "db connected";
 	} else {
-		echo "db connection failed <br/>";
+		echo "db connection faield";
 	}
 } else {
-	echo "mysql connection failed  <br/>";
+	echo "mysql connection faield";
 }
 ?>
