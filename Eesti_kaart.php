@@ -1,7 +1,8 @@
 <?php include 'header.php';?>
 
 
-        
+         <div class="container">
+             <div class="contentslider">
         
          
         <h2>Valimisringkonnad</h2>
@@ -25,5 +26,7 @@
 
 
         </map>
+        
+        </div> </div>
     
 <?php include 'footer.php';?>
