@@ -1,7 +1,7 @@
 <?php
 include('db/dbConfig.php');
-$dbConnected = mysql_connect($server,$username,$password);
-$dbSelected = mysql_select_db($databaseName,$dbConnected);
+$dbConnected = mysqli_connect($server,$username,$password);
+$dbSelected = mysqli_select_db($databaseName,$dbConnected);
 //kas andmebaasiga saab uhenduse?
 
 if($dbConnected){
@@ -25,16 +25,16 @@ if(isset($_POST['submit'])){
 	{
 		$email = $_POST['email'];
 		$password = $_POST['password'];
-		$query = mysql_query("select * from user where password='$password'
+		$query = mysqli_query("select * from user where password='$password'
 			and email='$email'",$dbConnected);
-		$rows = mysql_num_rows($query);
+		$rows = mysqli_num_rows($query);
 		if($rows == 1){
 			$_SESSION['login_user']=$email;
 			header("location:home.php");
 		} else {
 			$error = "Email voi parool vale";
 		}
-		mysql_close($dbConnected);
+		mysqli_close($dbConnected);
 	}
 }
 ?>
