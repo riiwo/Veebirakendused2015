@@ -8,56 +8,6 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <style type="text/css">@import "css/styles.css";</style>
 <script src="js/jquery-1.9.1.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js"></script>
-<script src="https://apis.google.com/js/client:platform.js" async defer></script>
-<script>
-    var valimisringkond = {};
-    valimisringkond['Tallinn'] = {
-      center: new google.maps.LatLng(59.436986, 24.752144),
-      Kandidaate: 3 //võtaks SQL-ist
-    };
-    valimisringkond['Tartu'] = {
-      center: new google.maps.LatLng(58.373768, 26.724465),
-      Kandidaate: 1
-    };
-
-    valimisringkond['Hiiu, Lääne, Saare'] = {
-      center: new google.maps.LatLng(58.793582, 23.407485),
-      Kandidaate: 3
-    };
-
-    var cityCircle;
-
-    function initialize() {
-
-      var mapOptions = {
-        zoom: 7,
-        center: new google.maps.LatLng(58.896407, 25.236417),
-        mapTypeId: google.maps.MapTypeId.TERRAIN
-      };
-
-      var map = new google.maps.Map(document.getElementById('map-canvas'),
-          mapOptions);
-
-      for (var city in valimisringkond) {
-        var populationOptions = {
-          strokeColor: '47c9af',
-          strokeWeight: 0.2,
-          fillColor: '#47c9af',
-          fillOpacity: 0.40,
-          map: map,
-          center: valimisringkond[city].center,
-          radius: 50000 
-          //saab määratleda suurust kas kandidaatide arvu järgi või antud valimispiirkonna populatsiooni järgi, link selle piirkonna kandidaatideni
-        };
-
-        cityCircle = new google.maps.Circle(populationOptions);
-      }
-    }
-
-    google.maps.event.addDomListener(window, 'load', initialize);
-
-        </script>
 </head>
 
 <body>
