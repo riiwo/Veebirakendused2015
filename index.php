@@ -33,11 +33,11 @@
                         data.addColumn('string', 'Topping');
                         data.addColumn('number', 'Slices');
                         data.addRows([
-                          ['IRL', 3],
-                          ['Sotsiaaldemokraadid', 1],
-                          ['Reformierakond', 1],
-                          ['Keskerakond', 1],
-                          ['Rohelised', 2]
+                          ['Orav-demokraadid', 3],
+                          ['Vaba-kesklased', 1],
+                          ['Sinised', 1],
+                          ['Üksikkandidaat Peeter', 1],
+                          ['JDS', 2]
                         ]);
 
                         // Set chart options
@@ -57,15 +57,15 @@
                     <table>
                        <tbody>
                             <tr>
-                                <td><b>Edgar Savisaar</b></td>
+                                <td><b>Edgar Savi</b></td>
                                 <td>5432</td>
                             </tr>
                             <tr>
-                                <td><b>Andrus Ansip</b></td>
+                                <td><b>Andrus Antp</b></td>
                                 <td>4561</td>
                             </tr>
                             <tr>
-                                <td><b>Uku Uusberg</b></td>
+                                <td><b>Uku Hein</b></td>
                                 <td>3541</td>
                             </tr>
                             <tr>
@@ -73,7 +73,7 @@
                                 <td>2154</td>
                             </tr>
                             <tr>
-                                <td><b>Juhan Parts</b></td>
+                                <td><b>Juhan Paar</b></td>
                                 <td>5</td>
                             </tr>
                         </tbody>
