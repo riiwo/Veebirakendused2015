@@ -81,7 +81,7 @@
             <div class="menu-link"><a href='./index.php'>INDEX</a></div>
             <div class="menu-link"><a href='./faq.php'>KKK</a></div>
             <div class="menu-link"><a href='./kaart.php'>Statistika</a></div>
-            <div class="menu-link"><a href='./home.php'>KODU</a></div>
+            <div class="menu-link"><a href='./home.php?id=profile2'>KODU</a></div>
         </div>
     </div>
 </div>
