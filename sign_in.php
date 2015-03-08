@@ -1,7 +1,7 @@
 <?php
 include('db/dbConfig.php');
 $dbConnected = mysqli_connect($server,$username,$password);
-$dbSelected = mysqli_select_db($databaseName,$dbConnected);
+$dbSelected = mysqli_select_db($dbConnected,$databaseName);
 //kas andmebaasiga saab uhenduse?
 
 if($dbConnected){
