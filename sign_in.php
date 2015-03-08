@@ -2,6 +2,19 @@
 include('db/dbConfig.php')
 $dbConnected = mysql_connect($server,$username,$password);
 $dbSelected = mysql_select_db($databaseName,$dbConnected);
+//kas andmebaasiga saab uhenduse?
+
+if($dbConnected){
+	echo "mysql uhendatud";
+	if($dbSelected){
+		echo "db connected";
+	} else {
+		echo "db connection faield";
+	}
+} else {
+	echo "mysql connection faield";
+}
+
 session_start();
 $error ="";
 if(isset($_POST['submit'])){

@@ -1,4 +1,6 @@
-<?php include 'header.php';?>
+<?php include('header.php');
+include('session.php');
+?>
 <div class="container">
     <div class="leftnav">
         <ul>
@@ -13,6 +15,7 @@
     <div class="main">
          <?php $string = $_GET['id'] . ".php"; ?>
          <?php include $string;?>
+         <p><?php echo $login_session; ?></p>
     </div>
 </div>
 <?php include 'footer.php';?>
