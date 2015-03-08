@@ -13,15 +13,16 @@ catch ( PDOException $e ) {
     print( "Error connecting to SQL Server." );
     die(print_r($e));
 }
-if($conn){
-	echo "MySQL connected";
-}
-else {
-	echo "MySQL connection failed";
-}
 // SQL Server Extension Sample Code:
  
 $connectionInfo = array("UID" => "valimisA1VJdQomV", "pwd" => "253cb2ae", "Database" => "valimisA1VJdQomV", "LoginTimeout" => 30, "Encrypt" => 1);
 $serverName = "eu-cdbr-azure-north-b.cloudapp.net";
 $conn = sqlsrv_connect($serverName, $connectionInfo);
+
+if($conn){
+	echo "MySQL connected";
+}
+else {
+	echo "MySQL connection";
+}
 ?>
