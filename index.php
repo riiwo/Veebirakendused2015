@@ -57,11 +57,11 @@
                     <table>
                        <tbody>
                             <tr>
-                                <td><b>Edgar Savi</b></td>
+                                <td><b>Edgar Rõiv</b></td>
                                 <td>5432</td>
                             </tr>
                             <tr>
-                                <td><b>Andrus Antp</b></td>
+                                <td><b>Andrus Savi</b></td>
                                 <td>4561</td>
                             </tr>
                             <tr>
