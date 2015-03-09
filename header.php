@@ -15,16 +15,16 @@
 <div class="header">
     <div class="top-wrapper">
         <div class="header-logo">
-            <img src="./images/header-logo.png" alt="Valimised">
+            <img src="./images/logo_test.png" alt="Valimised">
         </div>
-        <div class="logging">
+        <div class="logging clearfix">
            <div class="login">
                <a href="./login.php"><div class="custombtn1">LOGI SISSE</div></a>
            </div>
-           <div class="register">
+           <div class="register clearfix">
                <a href='./registrate.php'><div class="custombtn1">REGISTREERU</div></a>
            </div>
-            <div class="register">
+            <div class="register clearfix">
                <a href='logout.php'><div class="custombtn1">LOGI VÄlJA</div></a>
            </div>
         </div>
