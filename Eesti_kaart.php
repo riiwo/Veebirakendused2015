@@ -1,11 +1,6 @@
 <?php include 'header.php';?>
 <script type="text/javascript" src="js/jquery.imagemapster.min.js"></script>
 <!-- <script type="text/javascript" src="js/responsive_maps.js"></script> -->
-<script type="text/javascript">
-  $('img').mapster({
-    mapKey:'state'
-  });
-</script>
 
 
          <div class="container">
@@ -31,5 +26,14 @@
         
         </div> 
         </div>
-    
+<script>
+$(document).ready(function ()
+{
+  $('img').mapster({
+    mapKey: 'state',
+});
+});
+</script>
+
+
 <?php include 'footer.php';?>
