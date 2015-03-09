@@ -5,11 +5,11 @@ $dbSelected = mysqli_select_db($dbConnected,$databaseName);
 //kas andmebaasiga saab uhenduse?
 
 if($dbConnected){
-	echo "mysql uhendatud";
+	//echo "mysql uhendatud";
 	if($dbSelected){
-		echo "db connected";
+		//echo "db connected";
 	} else {
-		echo "db connection faield";
+		//echo "db connection faield";
 	}
 } else {
 	echo "mysql connection faield";
