@@ -50,6 +50,5 @@
         <p>Huvialad <input type="text" name="candidate_number" /></p>
     </form>
     <div class="custombtn1">REGISTREERU</div>
-    </div>
 </div>
 <?php include 'footer.php';?>
