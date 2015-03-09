@@ -19,6 +19,9 @@ ini_set('display_errors', 1);
         
         <span><?php echo $error; ?></span>
     </form>
+    <a href='http://valimised.azurewebsites.net/logifb.php' style='text-decoration:none'>
+        <br><br>
+        <img src='images/fblogin.png' style='border:0;'></a>
 </div>
 </div>
 <?php include 'footer.php';?>
