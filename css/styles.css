@@ -1,3 +1,26 @@
+/* =CLEARFIX
+----------------------------------------------- */
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+* html .clearfix {
+    height:1%;
+}
+.clearfix {
+    display: block;
+}
+.tg-after-three-blocks-clearfix {
+    clear: both;
+}
+
 /*Page*/
 
 #page {
@@ -17,6 +40,8 @@
 }
 .header-logo img {
     max-width: 100%;
+    height: 160px;
+    margin-bottom: 10px;
 }
 .logging {
     width: 25%;
