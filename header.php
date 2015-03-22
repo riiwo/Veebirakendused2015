@@ -14,6 +14,11 @@
 <div id="page">
 <div class="header">
     <div class="top-wrapper">
+        <?php
+        if($_SESSION['logged']){
+          echo "tootab";
+        }
+        ?>
         <div class="header-logo">
             <img src="./images/logo_test.png" alt="Valimised">
         </div>

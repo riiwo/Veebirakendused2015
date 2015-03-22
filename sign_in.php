@@ -30,6 +30,7 @@ if(isset($_POST['submit'])){
 		$rows = mysqli_num_rows($query);
 		if($rows == 1){
 			$_SESSION['login_user']=$email;
+			$_SESSION['logged'] = true;
 			header("location:home.php");
 		} else {
 			$error = "Email voi parool vale";
