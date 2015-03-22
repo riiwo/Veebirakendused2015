@@ -12,7 +12,7 @@ function connectDb(){
 
 function registerUser () {
 	$connection = connectDb();
-	$dbSelected = mysqli_select_db($connection,'valimised');
+	$dbSelected = mysqli_select_db($connection,'valimisA1VJdQomV');
 
 	$firstname = $_POST['firstname'];
 	$lastname = $_POST['lastname'];
