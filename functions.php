@@ -2,7 +2,7 @@
 
 function connectDb(){
 	include('db/dbConfig.php');
-	$connection = mysqli_connect($hostname,$username,$password);
+	$connection = mysqli_connect($server,$username,$password);
 	if($connection){
 		return $connection;
 	} else {
