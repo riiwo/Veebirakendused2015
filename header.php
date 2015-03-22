@@ -14,17 +14,16 @@
 <div id="page">
 <div class="header">
     <div class="top-wrapper">
-        <?php
-        if($_SESSION['logged']){
-          echo "tootab";
-        }
-        ?>
         <div class="header-logo">
             <img src="./images/logo_test.png" alt="Valimised">
         </div>
         <div class="logging clearfix">
-           <div class="login">
-               <a href="./login.php"><div class="custombtn1">LOGI SISSE</div></a>
+        <div class="login">
+        <?php
+        if($_SESSION['logged']){
+          echo '<a href="./login.php"><div class="custombtn1">LOGI SISSE</div></a>';
+        }
+        ?>
            </div>
            <div class="register clearfix">
                <a href='./registrate.php'><div class="custombtn1">REGISTREERU</div></a>
