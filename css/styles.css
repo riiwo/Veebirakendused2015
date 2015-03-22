@@ -21,77 +21,64 @@
     clear: both;
 }
 
+/*Body*/
+body {
+    background-color: white;
+    margin: 0px;
+    color: #363948;
+}
+
 /*Page*/
 
 #page {
-  font-family:'Raleway', sans-serif;
-  max-width: 1268px;
-  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 16px;
 }
 
 /*Header*/
-.top-wrapper {
-    overflow: hidden;
+.header {
+    width: 100%;
+    height: 90px;
+    /*background-color: #2980B9;*/
+    background-image: url('../images/proovime.png');
 }
-.header-logo {
-    width: 75%;
-    float: left;
+
+.menu-wrapper,
+.container {
+    margin: 0 auto;
+    width: 1000px;
 }
-.header-logo img {
-    max-width: 100%;
-    height: 160px;
-    margin-bottom: 10px;
+
+.menu-wrapper img {
+    height: 80px;
 }
-.logging {
-    width: 25%;
-    float:left;
-}
-.logging a {
-    text-decoration: none;
-}
-.logging .custombtn1 {
+
+.main-menu {
+    padding-top: 20px;
     float: right;
-    margin-right: 5px;
+}
+
+.main-menu li {
+    display: inline;
+}
+
+.main-menu a {
+    text-decoration: none;
+    color:#fff;
+    padding: 12px 32px;
+    border:2px solid #fff;
+    border-radius:3px;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+
+.main-menu a:hover,
+.main-menu a:active {
+    color: #0e83cd;
+    background-color: #fff;
 }
 
 /*Menu*/
-
-@import url(http://fonts.googleapis.com/css?family=Raleway);
-
-.menu-wrapper {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.menu {
-    height: 50px;
-    background-color: #47c9af;
-    z-index: 2;
-}
-.menu-link {
-    float:left;
-    width: 16.666666%;
-    text-align: center;
-}
-.menu-link a {
-    display: block;
-    width: 100%;
-    color: #ededed;
-    line-height: 50px;
-    font-size: 20px;
-    text-decoration: none;
-}
-.menu-link a:hover {
-    width: 100%;
-    color: #ededed;
-    line-height: 50px;
-    font-size: 20px;
-    text-decoration: none;
-    background-color: #98efdd;
-}
-.menu-link a:active {
-    background-color: #98efdd;
-}
 
 .main {
     width: 66.6666%;
@@ -128,25 +115,21 @@
 /*Home*/
 
 .contentslider, .resultslider, .container {
-    margin: 5px;
-    background-color: #c7e8e1;
-    padding: 20px;
-    text-align: center;
     overflow: hidden;
-    font-family: Raleway, sans-serif;
     
 }
 .container {
-    padding-bottom: 15px;
     text-align: left;
+    padding-bottom: 30px;
 }
 .custombtn1 {
+    border-radius: 3px;
     display: block;
     border: 0;
     margin-top: 10px;
     height: 40px;
     text-align: center;
-    background-color: #47c9af;
+    background-color: #2ba3d4;
     cursor: pointer;
     color: white;
     line-height: 40px;
@@ -157,7 +140,7 @@
     color: white;
 }
 .custombtn1:hover {
-    background-color: #98efdd;
+    background-color: #2ba3d4;
 }
 .left25 {
     float: left;
@@ -167,20 +150,7 @@
     float: right;
     margin-right: 25%
 }
-.resultchart {
-    width: 33.333333%;
-    float: left;
-}
-.resultchart .protsent{
-    padding: 0px;
-    margin: 0px;
-    font-size: 80px;
-}
-.resultchart table {
-    width: 100%;
-    text-align: left;
-    margin: 10px;
-}
+
 #chartdiv {
     background-color: #c7e8e1;
 }
@@ -264,12 +234,43 @@
 
 
 .footer {
-    margin-left: 5px;
-    margin-right: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #47c9af;
+    background-color: #252525;
     text-align: center;
-    color: white;
+    color: #ddd;
+    padding:8px 0;
 }
 
+/*Results*/
+
+.result-charts {
+    display: flex;
+}
+
+.result-charts div {
+    width:100%;
+    text-align: center;
+}
+
+#result-chart-left {
+    float: left;
+}
+
+#result-chart-middle {
+    margin:0 40px;
+}
+
+#result-chart-right {
+    float: right;
+}
+
+
+.result-charts .protsent{
+    font-size: 80px;
+    color: #2ba3d4;
+    margin: 0px;
+}
+#result-chart-table {
+    width: 100%;
+    text-align: left;
+    margin: 0 10px;
+}

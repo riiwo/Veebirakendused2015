@@ -1,40 +1,30 @@
 <?php
-include('db/dbConfig.php');
-$dbConnected = mysqli_connect($server,$username,$password);
-$dbSelected = mysqli_select_db($dbConnected,$databaseName);
-//kas andmebaasiga saab uhenduse?
 
-if($dbConnected){
-	//echo "mysql uhendatud";
-	if($dbSelected){
-		//echo "db connected";
-	} else {
-		//echo "db connection faield";
-	}
-} else {
-	echo "mysql connection faield";
-}
+include "functions.php";
 
-session_start();
-$error ="";
+$dbConnect = connectDb();
+$dbSelected = mysqli_select_db($dbConnect,'valimised');
+
 if(isset($_POST['submit'])){
 	if(empty($_POST['email']) || empty($_POST['password'])){
-		$error="E-mail voi parool on vale";
+		echo "Emaili või parooli väli on tühi.";
 	}
 	else
 	{
 		$email = $_POST['email'];
 		$password = $_POST['password'];
-		$query = mysqli_query($dbConnected,"select * from user where password='$password'
+		$query = mysqli_query($dbConnect,"select * from user where password='$password'
 			and email='$email'");
+
 		$rows = mysqli_num_rows($query);
 		if($rows == 1){
-			$_SESSION['login_user']=$email;
+			$_SESSION['email']=$email;
+			$_SESSION['login'] = true;
 			header("location:home.php");
 		} else {
-			$error = "Email voi parool vale";
+			echo "Sisetatud parool või email on vale";
 		}
-		mysqli_close($dbConnected);
+		mysqli_close($dbConnect);
 	}
 }
 ?>

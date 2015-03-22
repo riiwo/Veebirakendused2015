@@ -12,10 +12,10 @@ include('session.php');
             <li><a href="#">MIDAGI VEEL</a></li>
         </ul>
     </div>
-    <div class="main">
+<!--     <div class="main">
          <?php $string = $_GET['id'] . ".php"; ?>
          <?php include $string;?>
          <p><?php echo $login_session; ?></p>
-    </div>
+    </div> -->
 </div>
 <?php include 'footer.php';?>
