@@ -21,6 +21,7 @@ if(isset($_POST['submit'])){
 			$_SESSION['email']=$email;
 			$_SESSION['login'] = true;
 			header("location:home.php");
+			echo "sisse logimine onnestus";
 		} else {
 			echo "Sisetatud parool või email on vale";
 		}
