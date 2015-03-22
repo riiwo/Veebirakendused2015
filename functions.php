@@ -25,10 +25,9 @@ function registerUser () {
 		if($rows > 0){
 			echo "Antud emailiga kasutaja on juba olemas";
 		} else {
-			$sql = "INSERT INTO user (firstname, lastname, email, password) 
+			$sql = "INSERT INTO user (firstName, lastName, email, password) 
 			VALUES ('$firstname', '$lastname','$email','$password')";
 			$connection->query($sql);
-			echo "Kasutaja loomine onnestus";
 			header("location:home.php");
 		}
 		
