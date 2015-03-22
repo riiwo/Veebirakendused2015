@@ -3,7 +3,7 @@
 include "functions.php";
 
 $dbConnect = connectDb();
-$dbSelected = mysqli_select_db($dbConnect,'valimisA1VJdQomV');
+$dbSelected = mysqli_select_db($dbConnect,'valimised');
 
 if(isset($_POST['submit'])){
 	if(empty($_POST['email']) || empty($_POST['password'])){
