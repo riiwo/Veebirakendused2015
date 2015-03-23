@@ -1,5 +1,5 @@
 <?php
-include_once 'includes/DB/dbConnect.php';
+include_once 'db/dbConnect.php';
 include_once 'functions.php';
 include 'header.php';
 
