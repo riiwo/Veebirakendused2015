@@ -1,5 +1,5 @@
 <?php
-include('db/dbConnect');
+include('db/dbConnect.php');
 $dbConnected = mysqli_connect($server,$username,$password);
 $dbSelected = mysqli_select_db($dbConnected,$databaseName);
 //kas andmebaasiga saab uhenduse?
