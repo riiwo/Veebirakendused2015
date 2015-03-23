@@ -1,16 +1,11 @@
 <?php
-include('db/dbConfig.php');
+include('db/dbConnect');
 $dbConnected = mysqli_connect($server,$username,$password);
 $dbSelected = mysqli_select_db($dbConnected,$databaseName);
 //kas andmebaasiga saab uhenduse?
 
-if($dbConnected){
+if($mysgli){
 	//echo "mysql uhendatud";
-	if($dbSelected){
-		//echo "db connected";
-	} else {
-		//echo "db connection faield";
-	}
 } else {
 	echo "mysql connection faield";
 }
@@ -25,7 +20,7 @@ if(isset($_POST['submit'])){
 	{
 		$email = $_POST['email'];
 		$password = $_POST['password'];
-		$query = mysqli_query($dbConnected,"select * from user where password='$password'
+		$query = mysqli_query($mysgli,"select * from user where password='$password'
 			and email='$email'");
 		$rows = mysqli_num_rows($query);
 		if($rows == 1){
@@ -35,7 +30,7 @@ if(isset($_POST['submit'])){
 		} else {
 			$error = "Email voi parool vale";
 		}
-		mysqli_close($dbConnected);
+		mysqli_close($mysgli);
 	}
 }
 ?>
