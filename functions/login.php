@@ -1,5 +1,5 @@
 <?php
-require 'core/init.php';
+include 'core/init.php';
 
 if(!empty($_POST)){
 	$email = $_POST['email'];
