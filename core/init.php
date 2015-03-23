@@ -1,4 +1,4 @@
 <?php
 session_start();
-require 'functions/functions.php';
+require ('functions/functions.php');
 ?>
