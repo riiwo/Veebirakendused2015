@@ -1,10 +1,5 @@
 <?php
-try {
-    require 'core/init.php';
-} catch (Exception $e) {
-   echo "login ei saa initi kätte";
-    // Or handle $e some other way instead of `exit`-ing, if you wish.
-}
+require 'core/init.php';
 
 if(!empty($_POST)){
 	$email = $_POST['email'];
