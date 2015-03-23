@@ -19,11 +19,7 @@
         </div>
         <div class="logging clearfix">
         <div class="login">
-        <?php
-        if($_SESSION['logged']){
-          echo '<a href="./login.php"><div class="custombtn1">LOGI SISSE</div></a>';
-        }
-        ?>
+         <a href="./login.php"><div class="custombtn1">LOGI SISSE</div></a>
            </div>
            <div class="register clearfix">
                <a href='./registrate.php'><div class="custombtn1">REGISTREERU</div></a>
