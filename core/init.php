@@ -1,5 +1,8 @@
 <?php
 session_start();
-include 'functions/functions.php';
-echo "tootabb init.php ka";
+if(file_exists('functions/functions.php')){
+	include 'functions/functions.php';
+	header("location:index.php");
+}
+
 ?>
