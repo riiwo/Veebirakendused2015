@@ -1,6 +1,4 @@
-<?php include('header.php');
-include('session.php');
-?>
+<?php include('header.php');?>
 <div class="container">
     <div class="leftnav">
         <ul>
@@ -13,9 +11,9 @@ include('session.php');
         </ul>
     </div>
     <div class="main">
-         <?php $string = $_GET['id'] . ".php"; ?>
+        <!--  <?php $string = $_GET['id'] . ".php"; ?>
          <?php include $string;?>
-         <p><?php echo $login_session; ?></p>
+         <p><?php echo $login_session; ?></p> !0-->
     </div>
 </div>
 <?php include 'footer.php';?>
