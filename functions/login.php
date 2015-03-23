@@ -2,7 +2,7 @@
 try {
     require 'core/init.php';
 } catch (Exception $e) {
-    exit('Require failed! Error: '.$e);
+   echo "login ei saa initi kätte";
     // Or handle $e some other way instead of `exit`-ing, if you wish.
 }
 
