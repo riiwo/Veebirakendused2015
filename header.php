@@ -8,32 +8,27 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <style type="text/css">@import "css/styles.css";</style>
 <script src="js/jquery-1.9.1.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,500,700' rel='stylesheet' type='text/css'>
 </head>
-
 <body>
 <div id="page">
 <div class="header">
-    <div class="top-wrapper">
-        <div class="header-logo">
-            <img src="./images/logo_test.png" alt="Valimised">
-        </div>
-        <div class="logging clearfix">
-        <div class="login">
-         <a href="./login.php"><div class="custombtn1">LOGI SISSE</div></a>
-           </div>
-           <div class="register clearfix">
-               <a href='./registrate.php'><div class="custombtn1">REGISTREERU</div></a>
-           </div>
-            <div class="register clearfix">
-               <a href='logout.php'><div class="custombtn1">LOGI VÄlJA</div></a>
-           </div>
-        </div>
-    </div>
     <div class="menu-wrapper">
-        <div class="menu">
-            <div class="menu-link"><a href='./index.php'>KODU</a></div>
-            <div class="menu-link"><a href='./Eesti_kaart.php'>STATISTIKA</a></div>
-            <div class="menu-link"><a href='./faq.php'>KKK</a></div>
-        </div>
+      <a href="#"><img src="./images/logo2.png"></a>
+        <ul class="main-menu">
+
+          <?php 
+            if(isset($_SESSION['login_user']){
+              echo '<li><a href="index.php">Kodu</a></li>';
+              echo '<li><a href="Eesti_kaart.php">Statistika</a></li>';
+              echo ' <li><a href="logout.php">Logi välja</a></li>';
+            } else {
+              echo '<li><a href="index.php">Kodu</a></li>';
+              echo '<li><a href="Eesti_kaart.php">Statistika</a></li>';
+              echo '<li><a href="faq.php">KKK</a></li>';
+              echo '<li><a href="login.php">Logi sisse / Registreeru</a></li>';
+            }
+            ?>
+        </ul>
+      </div>
     </div>
-</div>
