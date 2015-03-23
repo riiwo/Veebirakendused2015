@@ -1,5 +1,5 @@
 <?php
 session_start();
-include 'functions/functions.php';
+require 'functions/functions.php';
 }
 ?>
