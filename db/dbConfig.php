@@ -1,9 +1,6 @@
 <?php 
-
-
-define("SERVER", "eu-cdbr-azure-north-b.cloudapp.net");
-define("USER", "b065e66df3ffd8");
-define("PASSWORD", "253cb2ae");
-define("DATABASE", "valimisA1VJdQomV");
-
+$server = "eu-cdbr-azure-north-b.cloudapp.net";
+$username ="b065e66df3ffd8";
+$password="253cb2ae";
+$databaseName = "valimisA1VJdQomV";
 ?>
