@@ -1,5 +1,10 @@
 <?php
-include ('core/init.php');
+try {
+    require 'core/init.php';
+} catch (Exception $e) {
+    exit('Require failed! Error: '.$e);
+    // Or handle $e some other way instead of `exit`-ing, if you wish.
+}
 
 if(!empty($_POST)){
 	$email = $_POST['email'];
