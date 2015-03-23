@@ -16,11 +16,18 @@
     <div class="menu-wrapper">
       <a href="#"><img src="./images/logo2.png"></a>
         <ul class="main-menu">
-            <li><a href="index.php">Kodu</a></li>
-            <li><a href="Eesti_kaart.php">Statistika</a></li>
-            <li><a href="faq.php">KKK</a></li>
-            <li><a href="login.php">Logi sisse</a></li>
-            <li><a href="logout.php">Logi välja</a></li>
+           <?php 
+            if(isset($_SESSION['login'])){
+              echo '<li><a href="index.php">Kodu</a></li>';
+              echo '<li><a href="Eesti_kaart.php">Statistika</a></li>';
+              echo ' <li><a href="logout.php">Logi välja</a></li>';
+            } else {
+              echo '<li><a href="index.php">Kodu</a></li>';
+              echo '<li><a href="Eesti_kaart.php">Statistika</a></li>';
+              echo '<li><a href="faq.php">KKK</a></li>';
+              echo '<li><a href="login.php">Logi sisse</a></li>';
+            }
+            ?>
         </ul>
       </div>
     </div>
