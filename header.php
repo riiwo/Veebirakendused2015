@@ -17,7 +17,7 @@
       <a href="#"><img src="./images/logo2.png"></a>
         <ul class="main-menu">
            <?php 
-            if(isset($_SESSION['login'])){
+            if(($_SESSION['login']){
               echo '<li><a href="index.php">Kodu</a></li>';
               echo '<li><a href="Eesti_kaart.php">Statistika</a></li>';
               echo '<li><a href="faq.php">KKK</a></li>';
