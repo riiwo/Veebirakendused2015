@@ -1,5 +1,9 @@
 <?php
 include('header.php');
+if(file_exists('core/init.php')){
+    echo "tootab";
+    include 'core/init.php';
+}
 ?>
 <div class="container">
    <div id="login">
