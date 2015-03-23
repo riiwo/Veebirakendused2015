@@ -3,7 +3,6 @@ include('header.php');
 if(file_exists('core/init.php')){
     echo "tootab";
     include 'core/init.php';
-    header("location:index.php");
 }
 ?>
 <div class="container">
