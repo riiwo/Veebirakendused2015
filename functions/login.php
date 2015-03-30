@@ -1,9 +1,5 @@
 <?php
-
-if(file_exists('core/init.php')){
-	echo "tootab";
-	include 'core/init.php';
-}
+include 'D:/home/site/wwwroot/core/init.php';
 
 if(!empty($_POST)){
 	$email = $_POST['email'];
