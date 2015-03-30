@@ -18,6 +18,10 @@ function user_exists($email){
 	}
 }
 
+function user_register($firstname, $lastname, $email, $password){
+	
+}
+
 function user_login($email, $password){
 	$connection = dbConnect();
 	$user_id = mysqli_query($connection,"select user_id from users where email ='$email' and password ='$password'");
