@@ -18,6 +18,7 @@ if(!empty($_POST)){
 			$_SESSION['user_id'] = $user_login;
 			$_SESSION['email'] = $email;
 			header("location:../index.php");
+			exit();
 		}
 	}
 }

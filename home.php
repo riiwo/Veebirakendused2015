@@ -11,7 +11,11 @@
         </ul>
     </div>
     <div class="main">
-        <?php include 'loggedin.php' ?>
+        <?php 
+        if(isset($_SESSION['user_id'])){
+            echo "logged in";
+        }
+        ?>
     </div>
 </div>
 <?php include 'footer.php';?>
