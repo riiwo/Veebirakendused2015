@@ -37,6 +37,8 @@ function user_data($user_id){
 }
 
 function logged_in(){
-	return (isset($_SESSION['user_id']))? true : false;
+	if(isset($_SESSION['user_id'])){
+		return true;
+	}
 }
 ?>
