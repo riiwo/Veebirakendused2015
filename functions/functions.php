@@ -29,7 +29,14 @@ function user_login($email, $password){
 	}
 }
 
-function user_register($firstname, $lastname, $email, $password){
-	
+function user_data($user_id){
+	$data = array();
+	$connection = dbConnect();
+	$data = mysqli_query($connection, "select user_id, email, password, firstname, lastname from users where user_id='$user_id");
+	return $data;
+}
+
+function logged_in(){
+	return (isset($_SESSION['user_id']))? true : false;
 }
 ?>

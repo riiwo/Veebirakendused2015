@@ -11,7 +11,7 @@
         </ul>
     </div>
     <div class="main">
-        <?php include 'loggedin.php'?>
+        <?php include 'loggedin.php' ?>
     </div>
 </div>
 <?php include 'footer.php';?>

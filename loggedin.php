@@ -1,1 +1,3 @@
-Marcus Juksar
+<?php
+	echo $user_data['email'];
+?>
