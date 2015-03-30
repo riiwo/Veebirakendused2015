@@ -9,4 +9,5 @@ if (logged_in()){
 // $user_data = user_data($session_id);
 // echo $user_data;
 }
+echo "pole sessiooni";
 ?>
