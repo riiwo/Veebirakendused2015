@@ -47,6 +47,11 @@
 	if(isset($_SESSION['fb_token'])){
 	 	$sess = new FacebookSession($_SESSION['fb_token']);
 	}
+
+	
+	
+
+	 
 	 	if(isset($sess)){
 	 		$_SESSION['fb_token']=$sess->getToken();
 	 		$request = new FacebookRequest($sess,'GET','/me');
