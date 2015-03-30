@@ -14,7 +14,7 @@
 <div id="page">
 <div class="header">
     <div class="menu-wrapper">
-      <a href="#"><img src="./images/logo2.png"></a>
+      <a href="index.php"><img src="./images/logo2.png"></a>
         <ul class="main-menu">
         <?php if(isset($_SESSION['user_id'])){
             echo '<li><a href="home.php">Kodu</a></li>';
