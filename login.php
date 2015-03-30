@@ -20,7 +20,7 @@ include 'core/init.php';
 <div class="container">
     <div id="registrate">
         <h2>Registrate Form</h2>
-        <form action="functions/registrate.php" method="post">
+        <form action="" method="post">
             <label>Eesnimi</label>
             <input id="firstname" name="firstname" type="text">
             <label>Perenimi</label>
