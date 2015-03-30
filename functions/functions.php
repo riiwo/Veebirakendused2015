@@ -1,4 +1,11 @@
 <?php
+function logged_in(){
+	if(isset($_SESSION['user_id'])){
+		return true;
+	} else {
+		return false;
+	}
+}
 function dbConnect(){
 	$server = "eu-cdbr-azure-north-b.cloudapp.net";
 	$username ="b065e66df3ffd8";
@@ -6,7 +13,6 @@ function dbConnect(){
 	$databaseName = "valimisA1VJdQomV";
 	return $connection =  mysqli_connect($server,$username,$password,$databaseName);
 }
-
 function user_exists($email){
 	$connection = dbConnect();
 	$query = mysqli_query($connection,"select * from users where email ='$email'");
@@ -23,14 +29,6 @@ function user_login($email, $password){
 	$rows = mysqli_num_rows($user_id);
 	if($rows==1){
 		return $user_id;
-	} else {
-		return false;
-	}
-}
-
-function logged_in(){
-	if(isset($_SESSION['user_id'])){
-		return true;
 	} else {
 		return false;
 	}
