@@ -1,7 +1,6 @@
 <?php
 include 'header.php';
 include 'core/init.php';
-}
 ?>
 <div class="container">
    <div id="login">
