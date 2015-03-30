@@ -17,7 +17,7 @@ if(!empty($_POST)){
 		} else {
 			$_SESSION['user_id'] = $user_login;
 			$_SESSION['email'] = $email;
-			header("location:index.php");
+			header("location:D:/home/site/wwwroot/index.php");
 		}
 	}
 }
