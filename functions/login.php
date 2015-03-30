@@ -16,7 +16,7 @@ if(!empty($_POST)){
 			echo "parool voi email vale";
 		} else {
 			$_SESSION['user_id'] = $user_login;
-			$user_data = user_data($_SESSION['user_id']);
+			$user_data = user_data($user_login);
 			header("location:../index.php");
 		}
 	}
