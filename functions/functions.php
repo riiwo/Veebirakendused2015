@@ -27,4 +27,12 @@ function user_login($email, $password){
 		return false;
 	}
 }
+
+function logged_in(){
+	if(isset($_SESSION['user_id'])){
+		return true;
+	} else {
+		return false;
+	}
+}
 ?>
