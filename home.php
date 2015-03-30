@@ -11,9 +11,7 @@
         </ul>
     </div>
     <div class="main">
-        <!--  <?php $string = $_GET['id'] . ".php"; ?>
-         <?php include $string;?>
-         <p><?php echo $login_session; ?></p> !0-->
+        <?php include 'loggedin.php'?>
     </div>
 </div>
 <?php include 'footer.php';?>

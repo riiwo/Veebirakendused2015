@@ -28,4 +28,8 @@ function user_login($email, $password){
 		return false;
 	}
 }
+
+function user_register($firstname, $lastname, $email, $password){
+	
+}
 ?>
