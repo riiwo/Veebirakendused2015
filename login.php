@@ -16,7 +16,7 @@ include 'core/init.php';
         <br><br>
         <img src='images/fblogin.png' style='border:0;'></a>
 </div>
-<!-- <div class="container">
+<div class="container">
     <div id="registrate">
         <h2>Registrate Form</h2>
         <form action="" method="post">
@@ -31,5 +31,5 @@ include 'core/init.php';
             <input name="submit" type="submit" value="Registreeru ">
         </form>
     </div>
-</div> -->
+</div>
 <?php include 'footer.php';?>
