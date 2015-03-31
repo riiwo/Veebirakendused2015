@@ -33,10 +33,12 @@ function user_login($email, $password){
 		return false;
 	}
 }
-// function user_data($user_id){
-// 	$connection = dbConnect();
-// 	$data = array();
-// 	$data = mysqli_query($connection,"select user_id,email,password,firstname,lastname from users where user_id ='$user_id'");
-// 	return $data;
-// }
+function user_data($user_id){
+	$connection = dbConnect();
+	$data = array();
+	$user_id = (int)$user_id;
+
+	$data = mysqli_fetch_assoc(mysqli_query($connection,"select * from users where user_id ='$user_id'"));
+	return $data;
+}
 ?>

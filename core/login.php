@@ -12,8 +12,11 @@ if(!empty($_POST)){
 	}
 	else {
 		$user_login = user_login($email, $password);
-		$_SESSION['user_id'] = $user_login;
-		header("location:../index.php");
+		if(!$user_login){
+			echo "parool voi email vale";
+		} else {
+			$_SESSION['user_id'] = $user_login;
+			header("location:../index.php");
 		}
 	}
 
