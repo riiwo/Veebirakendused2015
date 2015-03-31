@@ -15,11 +15,11 @@ if(!empty($_POST)){
 		// if(!$user_login){
 		// 	echo "parool voi email vale";
 		// } else {
+		echo $user_login;
 			$_SESSION['user_id'] = $user_login;
 			// $user_data = user_data($user_login);
 			header("location:../index.php");
 		}
 	}
-}
 
 ?>
