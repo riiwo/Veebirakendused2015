@@ -1,7 +1,4 @@
-<?php
-include 'core/init.php';
-include 'includes/header.php';
-?>
+<?php include 'includes/header.php';?>
 <div class="container">
   <div class="contentslider">
     <h3>Tule valima</h3>

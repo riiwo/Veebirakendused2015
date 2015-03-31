@@ -1,7 +1,4 @@
-<?php
-include 'includes/header.php';
-include 'core/init.php';
-?>
+<?php include 'includes/header.php';?>
 <div class="container">
     <div class="leftnav">
         <ul>

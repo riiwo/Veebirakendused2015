@@ -1,4 +1,7 @@
-<?php include 'includes/head.php';?>
+<?php
+include 'includes/head.php';
+include './core/init.php';    
+?>
 <body>
   <div id="page">
 <div class="header">
