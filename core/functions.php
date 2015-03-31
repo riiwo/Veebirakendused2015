@@ -7,10 +7,6 @@ function logged_in(){
 	}
 }
 function dbConnect(){
-	$server = "eu-cdbr-azure-north-b.cloudapp.net";
-	$username ="b065e66df3ffd8";
-	$password="253cb2ae";
-	$databaseName = "valimisA1VJdQomV";
 	return $connection =  mysqli_connect($server,$username,$password,$databaseName);
 }
 function user_exists($email){
@@ -33,10 +29,10 @@ function user_login($email, $password){
 		return false;
 	}
 }
-function user_data($user_id){
-	$connection = dbConnect();
-	$data = array();
-	$data = mysqli_query($connection,"select user_id,email,password,firstname,lastname from users where user_id ='$user_id'");
-	return $data;
-}
+// function user_data($user_id){
+// 	$connection = dbConnect();
+// 	$data = array();
+// 	$data = mysqli_query($connection,"select user_id,email,password,firstname,lastname from users where user_id ='$user_id'");
+// 	return $data;
+// }
 ?>

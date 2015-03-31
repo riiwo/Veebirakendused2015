@@ -1,4 +1,7 @@
-<?php include('header.php');?>
+<?php
+include 'includes/header.php';
+include 'core/init.php';
+?>
 <div class="container">
     <div class="leftnav">
         <ul>
@@ -11,7 +14,6 @@
         </ul>
     </div>
     <div class="main">
-        <?php echo $user_data['firstname']; ?>
     </div>
 </div>
-<?php include 'footer.php';?>
+<?php include 'includes/footer.php';?>
