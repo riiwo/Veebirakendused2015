@@ -19,5 +19,6 @@ if(!empty($_POST)){
 			header("location:../index.php");
 		}
 	}
+}
 
 ?>
