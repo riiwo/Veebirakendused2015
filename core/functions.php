@@ -7,6 +7,10 @@ function logged_in(){
 	}
 }
 function dbConnect(){
+	$server = "eu-cdbr-azure-north-b.cloudapp.net";
+	$username ="b065e66df3ffd8";
+	$password="253cb2ae";
+	$databaseName = "valimisA1VJdQomV";
 	return $connection =  mysqli_connect($server,$username,$password,$databaseName);
 }
 function user_exists($email){
