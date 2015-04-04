@@ -1,5 +1,5 @@
 <?php
-include ('init.php');
+include_once ('init.php');
 
 if(!empty($_POST)){
 	$email = $_POST['email'];
@@ -15,8 +15,8 @@ if(!empty($_POST)){
 		if(!$user_login){
 			echo "parool voi email vale";
 		} else {
-			$_SESSION['user_id'] = $user_login;
-			header("location:../index.php");
+			$_SESSION['user_id'] = mysqli_fetch_assoc($user_login)['user_id'];
+            header('location:../index.php');
 		}
 	}
 }

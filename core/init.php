@@ -1,10 +1,7 @@
 <?php
-session_start();
-require 'functions.php';
-
-if(logged_in()===true){
-	$session_id = $_SESSION['user_id'];
-	$user_data = user_data($session_id);
+$status = session_status();
+if($status == PHP_SESSION_NONE){
+    session_start();
 }
-
+require_once 'functions.php';
 ?>
