@@ -41,4 +41,14 @@ function user_data($user_id){
 	$data = mysqli_fetch_assoc(mysqli_query($connection,"select * from users where user_id ='$user_id'"));
 	return $data;
 }
+function show_errors($errors){
+	return '<ul><li>'. implode('</li><li>', $errors) . '</li></ul>';
+}
+function register_user($register_data){
+	$connection = dbConnect();
+	$fields = '`' . implode('`, `',array_keys($register_data)) . '`';
+	$data = '\'' . implode('\',\'', $register_data) . '\'';
+	$query = "INSERT INTO `users` ($fields) VALUES ($data)";
+	$result = mysqli_query($connection,$query);
+}
 ?>
