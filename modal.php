@@ -28,22 +28,6 @@
 					<div class="one_half last"><a href="#" id="register_form" class="btn">Registreeru</a></div>
 				</div>
 			</div>
-
-			<!-- Username & Password Login form -->
-			<div class="user_login">
-				<form action="core/login.php" method="post">
-					<label>E-mail :</label>
-                	<input id="email" name="email" type="text">
-                	<label>Password :</label>
-                	<input id="password" name="password" type="password">
-					
-					<div class="action_btns">
-						<div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Back</a></div>
-						<div class="one_half last"><input name="submit" type="submit" class="btn btn_red" value="Sisene"></div>
-					</div>
-				</form>
-			</div>
-
 			<!-- Register Form -->
 			<div class="user_register">
 				<form action="" id="register" type="post">
