@@ -1,3 +1,5 @@
+<!DOCTYPE>
+<html  manifest ="valimised.manifest">
 <?php include 'includes/header.php';?>
 <div class="container">
   <div class="contentslider">
@@ -14,3 +16,4 @@
   </div>
 </div>
 <?php include 'includes/footer.php';?>
+</html>
