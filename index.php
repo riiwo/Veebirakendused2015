@@ -1,3 +1,5 @@
+<!DOCTYPE>
+<html manifest ="valimised.manifest" ></html>
 <?php include 'includes/header.php';?>
 <div class="container">
   <div class="contentslider">
