@@ -4,7 +4,6 @@ CACHE MANIFEST
 index.php
 Eesti_kaart.php
 ./css/styles.css
-./includes/header.php
 ./includes/footer.php
 ./images/logo2.png
 ./images/fblogin.png
