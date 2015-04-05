@@ -1,7 +1,11 @@
 CACHE MANIFEST				
 #v1
-header.phpNETWORK
-index.phpNETWORK
+
+NETWORK:
+header.php
+index.php
+
+CACHE:
 Eesti_kaart.php
 faq.php
 ./css/styles.css
