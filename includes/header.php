@@ -6,7 +6,7 @@ include './core/init.php';
   <div id="page">
 <div class="header">
     <div class="menu-wrapper">
-      <a href="index.php"><img src="./images/logo2.png"></a>
+      <href="index.php"><img src="./images/logo2.png"></>
         <ul class="main-menu">
         <?php if(logged_in()){
             echo '<li><a href="home.php">Kodu</a></li>';
