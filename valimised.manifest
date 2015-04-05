@@ -1,13 +1,13 @@
 CACHE MANIFEST				
-
+#ver 22
 
 index.php
 Eesti_kaart.php
+faq.php
 ./css/styles.css
 ./images/logo2.png
 ./images/fblogin.png
 ./images/proovime.png
 ./images/Ringkonnad_veeb.png
-faq.php
 
 
