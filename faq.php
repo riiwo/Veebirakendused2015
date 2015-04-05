@@ -1,4 +1,4 @@
-<?php include 'header.php';?>
+<?php include 'includes/header.php';?>
    <div class="container">
       <div class="question-container">
           <label class="question" for="answer-1"><h4>Küsimus 1</h4></label>
@@ -51,4 +51,4 @@
       </div>
       
    </div>
-<?php include 'footer.php';?>
+<?php include 'includes/footer.php';?>

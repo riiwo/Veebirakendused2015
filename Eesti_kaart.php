@@ -1,6 +1,5 @@
-<?php include 'header.php';?>
-<script type="text/javascript" src="js/jquery.imagemapster.min.js"></script>
-<script type="text/javascript" src="js/responsive_maps.js"></script>
+<?php include 'includes/header.php';?>
+
 
 
          <div class="container">
@@ -26,4 +25,4 @@
         
         </div> 
         </div>
-<?php include 'footer.php';?>
+<?php include 'includes/footer.php';?>
