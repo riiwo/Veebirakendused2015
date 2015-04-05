@@ -3,15 +3,16 @@ CACHE MANIFEST
 
 NETWORK:
 header.php
+register_user.php
+election.php
+setcandidate.php
+login.php
+
 
 
 CACHE:
 Eesti_kaart.php
 index.php
-login.php
-register_user.php
-election.php
-setcandidate.php
 faq.php
 ./css/styles.css
 ./images/logo2.png
