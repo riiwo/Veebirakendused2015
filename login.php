@@ -16,15 +16,15 @@ if (isset($_GET['page'])) {
     <?php else :?>
     <form action="core/login.php" method="post">
     <?php endif; ?>
-        <label>E-mail :</label>
-        <input id="email" name="email" type="text">
+        <p><label>E-mail :</label>
+        <input id="email" name="email" type="text"/>
         <label>Password :</label>
-        <input id="password" name="password" type="password">
-        <input name="submit" type="submit" value="Login ">
+        <input id="password" name="password" type="password"/>
+        <input name="submit" type="submit" value="Login "/></p>
     </form>
     <a href='http://valimised.azurewebsites.net/logifb.php' style='text-decoration:none'>
-        <br><br>
-        <img src='images/fblogin.png' style='border:0;'></a>
+        </br></br>
+        <img src='images/fblogin.png';'></>
 </div>
 </div>
 <?php include 'includes/footer.php';?>
