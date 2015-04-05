@@ -22,9 +22,9 @@ if (isset($_GET['page'])) {
         <input id="password" name="password" type="password"/>
         <input name="submit" type="submit" value="Login "/></p>
     </form>
-    <a href='http://valimised.azurewebsites.net/logifb.php' style='text-decoration:none'>
-        </br></br>
-        <img src='images/fblogin.png';'></>
+    <a href='http://valimised.azurewebsites.net/logifb.php'>
+        <br></br>
+        <img src='images/fblogin.png';></a>
 </div>
 </div>
 <?php include 'includes/footer.php';?>
