@@ -1,4 +1,4 @@
-<?php include_once ',init.php'; ?>
+<?php include_once 'init.php'; ?>
 <?php
     $connection = dbConnect();
     $lastmodif = isset($_GET['timestamp']) ? intval($_GET['timestamp']) : 0;
