@@ -12,7 +12,7 @@
     <option value="">Vali kandidaat...</option>
     <?php 
         while ($row = mysqli_fetch_assoc($queryKand)) {
-            echo '<option value="'.$queryNam['userid'].'">'.$queryNam['firstname'].', '.$queryNam['lastname'].'</option>';
+            echo '<option value="'.$row['userid'].'">'.$row['firstname'].', '.$row['lastname'].'</option>';
         }
     ?> 
 </select>
