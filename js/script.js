@@ -16,7 +16,7 @@ function waitForUpdate() {
             setTimeout('waitForUpdate()', 1000);
         },
         error: function(XMLHttpRequest, textStatus, errorThrown){
-            alert("error:" + textStatus + " (" + errorThrown + ")");
+            $("#content").text("error:" + textStatus + " (" + errorThrown + ")");
             setTimeout('waitForUpdate()',15000);
         }
     });

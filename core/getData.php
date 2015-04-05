@@ -1,4 +1,4 @@
-<?php include_once 'init.php'; ?>
+<?php include_once ',init.php'; ?>
 <?php
     $connection = dbConnect();
     $lastmodif = isset($_GET['timestamp']) ? intval($_GET['timestamp']) : 0;
@@ -11,5 +11,4 @@
     $response = array();
     $response['msg'] = mysqli_fetch_assoc(mysqli_query($connection,"select count(*) AS votes from haaletustulemus"))['votes'];
     $response['timestamp'] = $currentmodif;
-    echo json_encode($response);
 ?>
