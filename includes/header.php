@@ -8,7 +8,7 @@ include './core/init.php';
     <div class="menu-wrapper">
       <a href="index.php"><img src="./images/logo2.png"></a>
         <ul class="main-menu">
-        <?php if(isset($_SESSION['user_id'])){
+        <?php if(logged_in()){
             echo '<li><a href="home.php">Kodu</a></li>';
             echo '<li><a href="logout.php">Logi välja</a></li>';
         } else {
