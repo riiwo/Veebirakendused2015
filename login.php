@@ -1,12 +1,13 @@
 <?php
 include 'includes/header.php';
 include 'core/init.php';
+$page = intval($_GET['page']);
 ?>
 
 <div class="container">
    <div id="login">
     <h2>Login Form</h2>
-    <form action="core/login.php" method="post">
+    <form action="core/login.php?page=<?php echo $page;?>" method="post">
         <label>E-mail :</label>
         <input id="email" name="email" type="text">
         <label>Password :</label>
