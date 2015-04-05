@@ -5,16 +5,14 @@
     $p = intval($_GET['p']);
     $s = intval($_SESSION['user_id']);
     $connection = dbConnect();
-    $queryKand = mysqli_query($connection,"select * from kandidaat WHERE valimisedid = '$e' AND ringkondid = '$p'");
+    $queryKand = mysqli_query($connection,"select kandidaat.*, users.firstname, users.lastname FROM kandidaat INNER JOIN users ON kandidaat.userid = users.user_id WHERE kandidaat.valimisedid = '$e' AND kandidaat.ringkondid = '$p'");
 ?>
 <h2>Kandidaadid:</h2> 
 <select name="kandidaat" id="kandidaat"> 
     <option value="">Vali kandidaat...</option>
     <?php 
         while ($row = mysqli_fetch_assoc($queryKand)) {
-            $abi = $row['userid'];
-            $queryNam =  mysqli_fetch_assoc(mysqli_query($connection, "SELECT firstname, lastname FROM users WHERE user_id = '$abi'"));
-            echo '<option value="'.$abi.'">'.$queryNam['firstname'].', '.$queryNam['lastname'].'</option>';
+            echo '<option value="'.$queryNam['userid'].'">'.$queryNam['firstname'].', '.$queryNam['lastname'].'</option>';
         }
     ?> 
 </select>
