@@ -30,7 +30,7 @@
       </div>
       <div class="question-container">
           <h4><label class="question" for="answer-5">Küsimus 5</label></h4>
-          <input type="checkbox" id="answer-5">
+          <input type="checkbox" id="answer-5"/>
           <div class="answer">
               <p>Lorem consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor. Integer laoreet placerat suscipit. Sed sodales scelerisque commodo. Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur nibh quis.</p>
           </div>
