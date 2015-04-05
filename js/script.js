@@ -1,8 +1,8 @@
-var $timestamp = null;
+var timestamp = null;
 function waitForUpdate() {
     $.ajax ({
         type: "GET",
-        url: "./core/getData.php?timestamp="+$timestamp+"",
+        url: "./core/getData.php?timestamp=" + timestamp,
         async: true,
         cache: false,
 
