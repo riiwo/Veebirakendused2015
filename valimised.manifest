@@ -9,5 +9,10 @@ faq.php
 ./images/fblogin.png
 ./images/proovime.png
 ./images/Ringkonnad_veeb.png
-
+./js/easyResponsiveTabs.js
+./js/responsive_maps.js
+./js/jquery.imagemapster.min.js
+./js/jquery-1.9.1.min.js
+./js/jquery-1.6.3.min.js
+./js/script.js
 
