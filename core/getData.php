@@ -4,7 +4,7 @@
     $lastmodif = isset($_GET['timestamp']) ? intval($_GET['timestamp']) : 0;
     $currentmodif = mysqli_fetch_assoc(mysqli_query($connection, "SELECT MAX(updatetime) AS time FROM haaletustulemus"))['time'];
     while ($currentmodif <= $lastmodif) {
-        usleep(100000);
+        usleep(10000000);
         clearstatcache();
         $currentmodif = mysqli_fetch_assoc(mysqli_query($connection, "SELECT MAX(updatetime) AS time FROM haaletustulemus"))['time'];
     }
