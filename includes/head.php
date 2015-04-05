@@ -11,5 +11,7 @@
 <script type="text/javascript" src="js/responsive_maps.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
+<style type="text/css">@import "css/modal.css";</style>
+<style type="text/css">@import "css/normalize.css";</style>
 <script src="js/register.js"></script>
 </head>
