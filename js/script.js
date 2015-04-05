@@ -13,11 +13,7 @@ function waitForUpdate() {
                 $("#content").text("Hetkel hääli:"+json['msg']);
             }
             timestamp = json['timestamp'];
-            setTimeout('waitForUpdate()', 100000);
-        },
-        error: function(XMLHttpRequest, textStatus, errorThrown){
-            $("#content").text("error:" + textStatus + " (" + errorThrown + ")");
-            setTimeout('waitForUpdate()',1500000);
+            setTimeout('waitForUpdate()', 10000000000000000);
         }
     });
 }
