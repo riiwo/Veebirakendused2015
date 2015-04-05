@@ -3,8 +3,8 @@
   <div class="contentslider">
     <h3>Tule valima</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed iaculis tellus. Integer non luctus lectus, in faucibus ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vestibulum egestas mi orci, nec molestie justo interdum rhoncus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin eget leo volutpat, ullamcorper arcu vitae, pretium odio. Proin condimentum tellus ligula, at euismod tellus commodo ac.</p>
-    <a href="election.php"><div class="custombtn1 left25">ANNA HÄÄL</div></a>
-    <a href="setcandidate.php"><div class="custombtn1 right25">ESITA KANDIDATUUR</div></a>
+    <div class="custombtn1 left25"><a href="election.php">ANNA HÄÄL</div></a>
+    <div class="custombtn1 right25"><a href="setcandidate.php">ESITA KANDIDATUUR</div></a>
   </div>
   <div class="result">
     <div class="result-text">
