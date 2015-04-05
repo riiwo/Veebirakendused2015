@@ -18,7 +18,8 @@ if(!empty($_POST)){
 			echo "parool voi email vale";
 		} else {
 			$_SESSION['user_id'] = mysqli_fetch_assoc($user_login)['user_id'];
-            header('location:../'.$page);
+            $str = "location: ../".$page;
+            header($str);
 		}
 	}
 }
