@@ -60,15 +60,11 @@ include './core/init.php';
                 <input id="email" name="email" type="text"/>
                 <label>Password :</label>
                 <input id="password" name="password" type="password"/>
-                <input name="submit" type="submit" value="Login "/>
-                </form>
-                  
-
                     <div class="action_btns">
-                        <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i>Tagasi</a></div>
+                        <div class="one_half"><a href="#" class="btn back_btn">Tagasi</a></div>
                        <div class="one_half last"><input name="submit" type="submit" value="Login "/></div>
                     </div>
-               
+                </form>
             </div>
 
             <!-- Register Form -->
@@ -92,7 +88,7 @@ include './core/init.php';
                     <div id="results"></div>
 
                     <div class="action_btns">
-                        <div class="one_half"><a href="#" class="btn back_btn"><i class="fa fa-angle-double-left"></i> Tagasi</a></div>
+                        <div class="one_half"><a href="#" class="btn back_btn">Tagasi</a></div>
                         <div class="one_half last"><button href="#" id="register_user" class="btn btn_red">Registreeri</button></div>
                     </div>
             </div>
