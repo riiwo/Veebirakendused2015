@@ -24,7 +24,7 @@ if (isset($_GET['page'])) {
     </form>
     <a href='http://valimised.azurewebsites.net/logifb.php'>
         <br></br>
-        <img src='images/fblogin.png';></a>
+        <img src='images/fblogin.png'/></a>
 </div>
 </div>
 <?php include 'includes/footer.php';?>
