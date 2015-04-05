@@ -1,5 +1,6 @@
 <?php include 'includes/header.php';?>
-
+<div class="container">
+   <div id="login">
 <form action="" id="register" type="post">
 	<label>E-mail:</label>
     <input type="text" id="email" name="email">
@@ -20,5 +21,7 @@
 	</form>
 
 <div id="results"></div>
+</div>
+</div>
 
 <?php include 'includes/footer.php';?>

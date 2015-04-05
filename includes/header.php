@@ -14,7 +14,8 @@ include './core/init.php';
         } else {
             echo '<li><a href="Eesti_kaart.php">Statistika</a></li>';
             echo '<li><a href="faq.php">KKK</a></li>';
-            echo '<li><a href="login.php">Logi sisse</a></li>';
+            echo '<li><a href="login.php">Sisene</a></li>';
+            echo '<li><a href="register_user.php">Registreeru</a></li>';
         }
         ?>
         </ul>
