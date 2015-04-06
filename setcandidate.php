@@ -38,6 +38,6 @@
         <button class="custombtn1" onclick="esita(<?php echo $s; ?>, election.value, place.value, party.value)">ESITA</button>
         <div id="esita"></div> 
     <?php else: ?>
-        <?php header("Location: login.php?page=setcandidate.php"); ?>
+        <?php header("Location: index.php"); ?>
     <?php endif; ?>
 <?php include 'includes/footer.php';?>

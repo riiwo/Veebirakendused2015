@@ -25,6 +25,6 @@
     </select>
     <div id="kandidate"></div>
 <?php else: ?>
-    <?php header("Location: login.php?page=election.php"); ?>
+    <?php header("Location: index.php"); ?>
 <?php endif; ?>
 <?php include 'includes/footer.php';?>
