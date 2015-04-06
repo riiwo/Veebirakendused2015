@@ -33,11 +33,11 @@ register_user.php
 ./js/jquery.leanModal.min.js
 ./js/register.js
 index.php
-
-
-CACHE:
 Eesti_kaart.php
 faq.php
+
+CACHE:
+
 ./css/styles.css
 ./images/logo2.png
 ./images/fblogin.png
