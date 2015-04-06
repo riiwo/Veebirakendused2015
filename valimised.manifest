@@ -6,11 +6,24 @@ header.php
 register_user.php
 election.php
 setcandidate.php
+candidate.php
 login.php
+loggedin.php
+logifb.php
+modal.php
+profile.php
 head.php
+footer.php
 home.php
 logout.php
-
+register_user.php
+./core/functions.php
+./core/getData.php
+./core/init.php
+./core/login.php
+./core/register.php
+./core/setcan.php
+./core/vote.php
 
 
 CACHE:
