@@ -4,6 +4,8 @@ $link = dbConnect();
 $a = intval($_GET['a']);
 $b = intval($_GET['b']);
 $c = intval($_GET['c']);
+date_default_timezone_get();
+$d = time();
 if($link === false){
     die("ERROR: Could not connect. " . mysqli_connect_error());
 }
@@ -13,7 +15,7 @@ while($data=mysqli_fetch_array($result)){
     $count = $data['num'];
 }
 if ($count==0) {
-    $sql = "INSERT INTO haaletustulemus (userid, kandidateid, valimised) VALUES ('$a','$b','$c')";
+    $sql = "INSERT INTO haaletustulemus (userid, kandidateid, valimised,updatetime) VALUES ('$a','$b','$c','$d')";
     if(mysqli_query($link, $sql)){
         echo "Hääl antud";
     } else{
