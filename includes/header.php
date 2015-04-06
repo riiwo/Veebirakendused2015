@@ -89,7 +89,7 @@ include './core/init.php';
 
                     <div class="action_btns">
                         <div class="one_half"><a href="#" class="btn back_btn">Tagasi</a></div>
-                        <div class="one_half last"><button href="#" id="register_user" class="btn btn_red">Registreeri</button></div>
+                        <div class="one_half last"><button id="register_user" class="btn btn_red">Registreeri</button></div>
                     </div>
             </div>
         </section>
