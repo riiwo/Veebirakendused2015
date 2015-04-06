@@ -21,8 +21,6 @@ $(document).ready(function(){
         		});
         		}
         	});
-        } else {
-            $('div#results').text("Kõik väljad tuleb täita!");
         }
     });
 });
