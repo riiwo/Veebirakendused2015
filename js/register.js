@@ -3,8 +3,8 @@ $(document).ready(function(){
         var email = $("input#email").val();
         var password = $("input#password").val();
         var password_check = $("input#password_check").val();
-        var firstname = $("input#email").val();
-        var lastname = $("input#email").val();
+        var firstname = $("input#firstname").val();
+        var lastname = $("input#lastname").val();
         $('div#results').text("");
         if($.trim(email)!==''){
             $.post('./core/register.php',{email: email}, function(data){
