@@ -18,7 +18,7 @@ function waitForUpdate() {
     });
 }
 $(document).ready(function(){
-    waitForUpdate();
+  ##  waitForUpdate();
 });
 
 function showContent(str, str2) {
