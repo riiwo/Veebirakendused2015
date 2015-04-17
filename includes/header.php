@@ -1,6 +1,10 @@
 <?php
-include 'includes/head.php';
-include './core/init.php';    
+if (basename($_SERVER['PHP_SELF'])=='index.php') {
+    include 'includes/head_index.php';
+} else {
+    include 'includes/head.php';
+}
+include './core/init.php';   
 ?>
 <body>
   <div id="page">
