@@ -1,5 +1,5 @@
 CACHE MANIFEST				
-#v2
+#v2.2.2
 
 NETWORK:
 head_index.php
@@ -22,11 +22,16 @@ register_user.php
 ./core/register.php
 ./core/setcan.php
 ./core/vote.php
-faq.php
-header.php
-head.php
+./includes/header.php
+./includes/head.php
+./includes/head_index.php
+
+
+
 
 CACHE:
+
+
 Eesti_kaart.php
 ./js/easyResponsiveTabs.js
 ./js/responsive_maps.js
@@ -36,11 +41,13 @@ Eesti_kaart.php
 ./js/script.js
 ./js/jquery.leanModal.min.js
 ./js/register.js
-index.php
 ./css/styles.css
 ./images/logo2.png
 ./images/fblogin.png
 ./images/proovime.png
 ./images/Ringkonnad_veeb.png
+faq.php
 
 
+FALLBACK:
+index.php fallback.php
