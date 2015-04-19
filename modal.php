@@ -13,7 +13,7 @@
 			<!-- Social Login -->
 			<div class="social_login">
 				<div class="">
-					<a href="#" class="social_box fb">
+					<a href='http://valimised.azurewebsites.net/logifb.php' class="social_box fb">
 						<span class="icon"><i class="fa fa-facebook"></i></span>
 						<span class="icon_title">Connect with Facebook</span>
 					</a>
