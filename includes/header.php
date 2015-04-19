@@ -1,5 +1,5 @@
 <?php
-if (basename($_SERVER['PHP_SELF'])==Eesti_kaart.php) {
+if (basename($_SERVER['PHP_SELF'])=='Eesti_kaart.php') {
     include 'includes/head_index.php';
 } else {
     include 'includes/head.php';
