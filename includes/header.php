@@ -48,26 +48,15 @@ include './core/init.php';
             <!-- Username & Password Login form -->
             <div class="user_login">
                 
-               <?php
-                if (isset($_GET['page'])) {
-                    $page = $_GET['page'];
-                } else {
-                    $page= "" ;
-                }
-                ?>
-                <?php if($page!=""): ?>
-                <form action="core/login.php?page=<?php echo $page;?>" method="post">
-                <?php else :?>
-                <form action="core/login.php" method="post">
-                <?php endif; ?>
+                <form action="" method="post" id="form_login" autocomplete="off">
                 <label>E-mail :</label>
                 <input id="email" name="email" type="text"/>
                 <label>Password :</label>
                 <input id="password" name="password" type="password"/>
-                <span class="check-exists-feedback" data-type="password"></span>
+                <span class="check-login-feedback" data-type="password"></span>
                     <div class="action_btns">
                         <div class="one_half"><a href="#" class="btn back_btn">Tagasi</a></div>
-                       <div class="one_half last"><input name="submit" type="submit" value="Login"/></div>
+                       <div class="one_half last"><input name="submit" id="login" type="submit" value="Login"/></div>
                     </div>
                 </form>
             </div>

@@ -8,16 +8,20 @@ if (isset($_GET['page'])) {
 if(!empty($_POST)){
 	$email = $_POST['email'];
 	$password = $_POST['password'];
-	if(empty($email) || empty($password)){
-		echo "Emaili voi parooli vÄli on tühi ";
+
+	$email = filter_var($email, FILTER_SANITIZE_EMAIL);
+
+	if(!filter_var($email, FILTER_VALIDATE_EMAIL)){
+		echo "0";
 	}
+
 	else if(!user_exists($email)){
-		echo "antud kasutajat pole olemas ";
+		echo "1";
 	}
 	else {
 		$user_login = user_login($email, $password);
 		if(!$user_login){
-			echo "parool voi email vale";
+			echo "2";
 		} else {
 			$_SESSION['user_id'] = mysqli_fetch_assoc($user_login)['user_id'];
             if ($page!="") {
