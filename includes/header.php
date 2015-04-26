@@ -64,9 +64,10 @@ include './core/init.php';
                 <input id="email" name="email" type="text"/>
                 <label>Password :</label>
                 <input id="password" name="password" type="password"/>
+                <span class="check-exists-feedback" data-type="password"></span>
                     <div class="action_btns">
                         <div class="one_half"><a href="#" class="btn back_btn">Tagasi</a></div>
-                       <div class="one_half last"><input name="submit" type="submit" value="Login "/></div>
+                       <div class="one_half last"><input name="submit" type="submit" value="Login"/></div>
                     </div>
                 </form>
             </div>
@@ -99,35 +100,6 @@ include './core/init.php';
         </section>
     </div>
 </div>
-        <script type="text/javascript">
-    $("#modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
-
-    $(function(){
-        // Calling Login Form
-        $("#login_form").click(function(){
-            $(".social_login").hide();
-            $(".user_login").show();
-            return false;
-        });
-
-        // Calling Register Form
-        $("#register_form").click(function(){
-            $(".social_login").hide();
-            $(".user_register").show();
-            $(".header_title").text('Register');
-            return false;
-        });
-
-        // Going back to Social Forms
-        $(".back_btn").click(function(){
-            $(".user_login").hide();
-            $(".user_register").hide();
-            $(".social_login").show();
-            $(".header_title").text('Login');
-            return false;
-        });
-
-    })
-</script>
+        <script type="text/javascript" src="js/modal.js"> </script>
       </div>
     </div>
