@@ -1,10 +1,10 @@
 <?php
 include_once ('init.php');
-// if (isset($_GET['page'])) {
-//     $page = $_GET['page'];
-// } else {
-//     $page= "" ;
-// }
+if (isset($_GET['page'])) {
+    $page = $_GET['page'];
+} else {
+    $page= "" ;
+}
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 
@@ -23,9 +23,12 @@ include_once ('init.php');
 			echo "2";
 		} else {
 			$_SESSION['user_id'] = mysqli_fetch_assoc($user_login)['user_id'];
-            $str="Location: ../".$page;
-            header($str);
-          
+            if ($page!="") {
+                $str="Location: ../".$page;
+                header($str);
+            } else {
+                header('location:../index.php');
+            }
 		}
 	}
 
