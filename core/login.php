@@ -26,6 +26,7 @@ if (isset($_GET['page'])) {
             if ($page!="") {
                 $str="Location: ../".$page;
                 header($str);
+                echo "3";
             } else {
                 header('location:../index.php');
             }
