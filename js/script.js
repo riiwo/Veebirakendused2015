@@ -1,30 +1,10 @@
 var timestamp = null;
 setInterval(function() {
-    $.get('core/getData.php', function(data) {
+    $.get('./core/getData.php', function(data) {
         $("#content").html(data);
     });
 }, 5000);
-function waitForUpdate() {
-    $.ajax ({
-        type: "GET",
-        url: "./core/getData.php?timestamp=" + timestamp,
-        async: true,
-        cache: false,
 
-        success: function(data) {
-            var json = eval('(' + data + ')');
-
-            if(json['msg'] != "") {
-                $("#content").text("Hetkel hääli:"+json['msg']);
-            }
-            timestamp = json['timestamp'];
-            setTimeout('waitForUpdate()', 100000);
-        }
-    });
-}
-// $(document).ready(function(){
-//   ##  waitForUpdate();
-// });
 
 function showContent(str, str2) {
     if (str=="" || str2=="")
