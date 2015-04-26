@@ -17,8 +17,6 @@ $(function(){
 					feedback.text("Sisestatud emailiga kaustajat pole olemas");
 				} else if (data == '2'){
 					feedback.text("Sisestatud parool voi email ei ole oige");
-				} else {
-					window.location.href = "index.html" + data;
 				}
 			});
 		} 
