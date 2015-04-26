@@ -17,9 +17,9 @@ function waitForUpdate() {
         }
     });
 }
-$(document).ready(function(){
-  ##  waitForUpdate();
-});
+// $(document).ready(function(){
+//   ##  waitForUpdate();
+// });
 
 function showContent(str, str2) {
     if (str=="" || str2=="")
