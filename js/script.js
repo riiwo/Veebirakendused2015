@@ -13,7 +13,7 @@ function waitForUpdate() {
                 $("#content").text("Hetkel hääli:"+json['msg']);
             }
             timestamp = json['timestamp'];
-            setTimeout('waitForUpdate()', 10000000000000000);
+            setTimeout('waitForUpdate()', 100000);
         }
     });
 }
