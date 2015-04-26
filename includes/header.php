@@ -89,6 +89,5 @@ include './core/init.php';
         </section>
     </div>
 </div>
-        <script type="text/javascript" src="js/modal.js"> </script>
       </div>
     </div>
