@@ -5,7 +5,6 @@ if (isset($_GET['page'])) {
 } else {
     $page= "" ;
 }
-if(!empty($_POST)){
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 
@@ -32,6 +31,5 @@ if(!empty($_POST)){
             }
 		}
 	}
-}
 
 ?>
