@@ -1,4 +1,9 @@
 var timestamp = null;
+setInterval(function() {
+    $.get('core/getData.php', function(data) {
+        $("#content").html(data);
+    });
+}, 5000);
 function waitForUpdate() {
     $.ajax ({
         type: "GET",
