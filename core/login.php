@@ -23,7 +23,7 @@ include_once ('init.php');
 			echo "2";
 		} else {
 			$_SESSION['user_id'] = mysqli_fetch_assoc($user_login)['user_id'];
-            echo "3"
+            echo "3";
 		}
 	}
 
