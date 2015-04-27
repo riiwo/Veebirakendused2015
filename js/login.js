@@ -10,7 +10,7 @@ $(function(){
 			feedback.text("Emaili või parooli väli on tühi");
 
 		} else {
-			$.post("core/login.php", data_form, function(data){
+			$.post("./core/login.php", data_form, function(data){
 				if (data == '0'){
 					feedback.text("Sisestatud email ei ole korrektne");
 				} else if (data == '1') {
