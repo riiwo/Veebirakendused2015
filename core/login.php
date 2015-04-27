@@ -23,13 +23,7 @@ if (isset($_GET['page'])) {
 			echo "2";
 		} else {
 			$_SESSION['user_id'] = mysqli_fetch_assoc($user_login)['user_id'];
-            if ($page!="") {
-                $str="Location: ../".$page;
-                header($str);
-                echo "3";
-            } else {
-                header('location:../index.php');
-            }
+            echo "3"
 		}
 	}
 
