@@ -1,20 +1,23 @@
 <?php
 include ('init.php');
 
-if(isset($_POST['email'])=== true && empty($_POST['email'])===false){
-    if(user_exists($_POST['email'])===true){
-        echo 'Sisestatud emailiga \'' . $_POST['email'] . '\' kasutaja on juba olemas.';
-    }
-}
+$email = $_POST['email'];
+$email = filter_var($email, FILTER_SANITIZE_EMAIL);
+$password = $_POST['password'];
+$password_check  = $_POST['password_check'];
 
-if(isset($_POST['password'])=== true && empty($_POST['password'])===false && isset($_POST['password_check'])=== true && empty($_POST['password_check'])===false){
-    if($_POST['password']!==$_POST['password_check']){
-        echo "Sisestatud paroolid ei klapi";
-    }
-}
+if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
+    echo "0";
+} 
 
-if(isset($_POST['email'])=== true && empty($_POST['email'])===false && isset($_POST['password'])=== true && empty($_POST['password'])===false && isset($_POST['firstname'])=== true && empty($_POST['firstname'])===false
-    && isset($_POST['lastname'])=== true && empty($_POST['lastname'])===false){
+else if(user_exists($email)){
+    echo "1";
+}  
+
+else if ($password !== $password_check){
+    echo "2";
+}
+else {
     $register_data = array(
         'firstname' => $_POST['firstname'],
         'lastname'  => $_POST['lastname'],
@@ -22,5 +25,5 @@ if(isset($_POST['email'])=== true && empty($_POST['email'])===false && isset($_P
         'password'  => $_POST['password']
         );
     register_user($register_data);
+    echo "3";
 }
-?>

@@ -53,7 +53,6 @@ include './core/init.php';
                 <input id="email" name="email" type="text"/>
                 <label>Password :</label>
                 <input id="password" name="password" type="password"/>
-                <span class="check-login-feedback" data-type="password"></span>
                     <div class="action_btns">
                         <div class="one_half"><a href="#" class="btn back_btn">Tagasi</a></div>
                        <div class="one_half last"><input name="submit" id="login" type="submit" value="Login"/></div>
@@ -63,7 +62,7 @@ include './core/init.php';
 
             <!-- Register Form -->
             <div class="user_register">
-                <form>
+                <form action="" method="post" id="form_register" autocomplete="off">
                     <label>E-mail:</label>
                     <input type="text" id="email" name="email">
                     <br />
@@ -79,11 +78,11 @@ include './core/init.php';
                     <label>Perenimi:</label>
                     <input type="text" id="lastname" name="lastname">
                     </form>
-                    <div id="results"></div>
+                    <span class="check-register-feedback" data-type="password"></span>
 
                     <div class="action_btns">
                         <div class="one_half"><a href="#" class="btn back_btn">Tagasi</a></div>
-                        <div class="one_half last"><button id="register_user" class="btn btn_red">Registreeri</button></div>
+                        <div class="one_half last"><input name="submit" id="register_user" type="submit" value="Registreeru" </div>
                     </div>
             </div>
         </section>
