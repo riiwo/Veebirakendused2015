@@ -9,22 +9,19 @@ $(function(){
 			$('#email').focus();
 			feedback.text("Emaili või parooli väli on tühi");
 
+
 		} else {
-			$.ajax({
-				type: 'POST',
-				url: './core/login.php',
-				data: data_form, 
-				function(data){
+			$.post("core/login.php", $('form#form_login').serializeArray(), function(data){
 				if (data == '0'){
 					feedback.text("Sisestatud email ei ole korrektne");
 				} else if (data == '1') {
 					feedback.text("Sisestatud emailiga kaustajat pole olemas");
 				} else if (data == '2'){
 					feedback.text("Sisestatud parool voi email ei ole oige");
-				} else if (data=='3'){
+				} else if (data == '3'){
+					feedback.text(data);
 					window.location.href = "index.php";
 				}
-			}
 			});
 		} 
 	});
