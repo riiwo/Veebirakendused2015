@@ -10,7 +10,7 @@ $(function(){
 			feedback.text("Emaili või parooli väli on tühi");
 
 		} else {
-			$.post({
+			$.ajax({
 				type: 'POST',
 				url: './core/login.php',
 				data: data_form, 
