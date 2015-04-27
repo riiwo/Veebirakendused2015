@@ -11,7 +11,7 @@ $(function(){
 
 
 		} else {
-			$.post("core/login.php", $('form#form_login').serializeArray(), function(data){
+			$.post("./core/login.php", $('form#form_login').serializeArray(), function(data){
 				if (data == '0'){
 					feedback.text("Sisestatud email ei ole korrektne");
 				} else if (data == '1') {
