@@ -11,7 +11,7 @@ $(function(){
 
 
 		} else {
-			$.post("http://valimised.azurewebsites.net/core/login.php", $('form#form_login').serializeArray(), function(data){
+			$.get("http://valimised.azurewebsites.net/core/login.php", $('form#form_login').serializeArray(), function(data){
 				if (data == '0'){
 					feedback.text("Sisestatud email ei ole korrektne");
 				} else if (data == '1') {

@@ -5,8 +5,8 @@ include_once ('init.php');
 // } else {
 //     $page= "" ;
 // }
-	$email = $_POST['email'];
-	$password = $_POST['password'];
+	$email = $_GET['email'];
+	$password = $_GET['password'];
 
 	$email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
