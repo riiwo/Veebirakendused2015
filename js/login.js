@@ -11,7 +11,7 @@ $(function(){
 
 
 		} else {
-			$.post("./core/login.php", $('form#form_login').serializeArray(), function(data){
+			$.post("http://valimised.azurewebsites.net/core/login.php", $('form#form_login').serializeArray(), function(data){
 				if (data == '0'){
 					feedback.text("Sisestatud email ei ole korrektne");
 				} else if (data == '1') {
@@ -19,7 +19,6 @@ $(function(){
 				} else if (data == '2'){
 					feedback.text("Sisestatud parool voi email ei ole oige");
 				} else if (data == '3'){
-					feedback.text(data);
 					window.location.href = "index.php";
 				}
 			});
