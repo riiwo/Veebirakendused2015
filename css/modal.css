@@ -2,6 +2,10 @@
 
 body {font-family: 'Source Sans Pro', sans-serif; font-size: 14px; color: #666;}
 
+#modal {
+    top:100px;
+}
+
 #lean_overlay {
     position: fixed;
     z-index:100;
