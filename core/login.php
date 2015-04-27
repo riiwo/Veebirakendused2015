@@ -1,10 +1,10 @@
 <?php
 include_once ('init.php');
-if (isset($_GET['page'])) {
-    $page = $_GET['page'];
-} else {
-    $page= "" ;
-}
+// if (isset($_GET['page'])) {
+//     $page = $_GET['page'];
+// } else {
+//     $page= "" ;
+// }
 	$email = $_POST['email'];
 	$password = $_POST['password'];
 
