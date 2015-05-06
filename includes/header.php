@@ -48,7 +48,7 @@ include './core/init.php';
             <!-- Username & Password Login form -->
             <div class="user_login">
                 
-                <form action="" method="post" id="form_login" autocomplete="off">
+                <form method="post" id="form_login" autocomplete="off">
                 <label>E-mail :</label>
                 <input id="email_login" name="email" type="text"/>
                 <label>Password :</label>
@@ -63,7 +63,7 @@ include './core/init.php';
 
             <!-- Register Form -->
             <div class="user_register">
-                <form action="" method="post" id="form_register" autocomplete="off">
+                <form method="post" id="form_register" autocomplete="off">
                     <label>E-mail:</label>
                     <input type="text" id="email_reg" name="email">
                     <br />
@@ -83,7 +83,7 @@ include './core/init.php';
 
                     <div class="action_btns">
                         <div class="one_half"><a href="#" class="btn back_btn">Tagasi</a></div>
-                        <div class="one_half last"><input name="submit" id="register_user" type="submit" value="Registreeru" </div>
+                        <div class="one_half last"><input name="submit" id="register_user" type="submit" value="Registreeru"/> </div>
                     </div>
             </div>
         </section>
