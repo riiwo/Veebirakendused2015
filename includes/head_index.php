@@ -1,6 +1,5 @@
-<!DOCTYPE html manifest= 'valimised.manifest' > 
-
-
+<!DOCTYPE html>
+<html manifest= 'valimised.manifest' > 
 <head>
 <title>E-valimised</title>
 <meta http-equiv="description" content="page description" />
