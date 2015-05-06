@@ -2,7 +2,6 @@
 <html manifest= 'valimised.manifest' > 
 <head>
 <title>E-valimised</title>
-<meta http-equiv="description" content="page description" />
 <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <style type="text/css">@import "css/styles.css";</style>
 <style type="text/css">@import "css/modal.css";</style>
