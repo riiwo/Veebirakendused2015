@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <head>
 <title>E-valimised</title>
-<meta http-equiv="description" content="page description">
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
