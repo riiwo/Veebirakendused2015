@@ -1,4 +1,5 @@
 function getUserData() {
+    var feedback = $('div#response');
     FB.api('/me?fields=first_name,email', function(response) {
         var jdata = JSON.stringify(response);
         $.ajax({
@@ -9,7 +10,7 @@ function getUserData() {
             },
             success: function(data){
                 if(data='1'){
-                    window.location.href("index.php");
+                    feedback.text("check");
                 }
             }
         });
