@@ -11,7 +11,8 @@
         <section class="popupBody">
             <!-- Social Login -->
             <div class="social_login">
-               <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div>
+               <button id="loginBtn">Facebook Login</button>
+<div id="response"></div>
                 <div class="action_btns">
                     <div class="one_half"><a href="#" id="login_form" class="btn">Sisene</a></div>
                     <div class="one_half last"><a href="#" id="register_form" class="btn">Registreeri</a></div>
@@ -62,6 +63,7 @@
     <script type="text/javascript" src="js/modal.js"> </script>
     <script type="text/javascript" src="js/register.js"></script>
     <script type="text/javascript" src="js/login.js"> </script>
+    <script type="text/javascript" src="js/log_fb.js"> </script>
 <?php endif; ?>
 </body>
 </html>
