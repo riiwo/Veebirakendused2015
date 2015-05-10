@@ -16,6 +16,7 @@
                         <span class="icon"><i class="fa fa-facebook"></i></span>
                         <span class="icon_title">Sisene Facebook-iga</span>
                     </a>
+                    <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div>
                 </div>
                 <div class="action_btns">
                     <div class="one_half"><a href="#" id="login_form" class="btn">Sisene</a></div>
