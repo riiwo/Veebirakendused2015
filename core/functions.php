@@ -33,6 +33,24 @@ function user_login($email, $password){
 		return false;
 	}
 }
+
+function fb_check($id){
+	$connection = dbConnect();
+	$user_id = mysqli_query($connection, "select user_id from users where user_id ='$id'");
+	$rows = mysqli_num_rows($user_id);
+	if($rows==1){
+		return true;
+	} else {
+		return false;
+	}
+}
+
+function fb_register($id, $firstname, $lastname){
+	$connection = dbConnect();
+	$query = "insert into users (user_id, firstname, lastname) values ('$id','$firstname','$lastname')";
+	$result = mysqli_query($connection,$query);
+}
+
 function user_data($user_id){
 	$connection = dbConnect();
 	$data = array();
