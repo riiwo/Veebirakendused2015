@@ -1,7 +1,5 @@
 <?php
 include_once ('init.php');
-
-if(!empty($_POST['data'])){
 	$json = $_POST['data'];
 	$array = json_decode($json, true);
 	$firstname = $array['first_name'];
@@ -17,5 +15,4 @@ if(!empty($_POST['data'])){
 		$_SESSION['user_id'] = $id;
 		echo "1";
 	}
-
 ?>
