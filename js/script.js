@@ -5,7 +5,6 @@ setInterval(function() {
     });
 }, 5000);
 
-
 function showContent(str, str2) {
     if (str=="" || str2=="")
       {
@@ -27,6 +26,7 @@ function showContent(str, str2) {
         document.getElementById("kandidate").innerHTML=xmlhttp.responseText;
         }
       }
+    window.history.pushState({},'test',"election.php?e="+str+"&p="+str2,true);
     xmlhttp.open("GET","candidate.php?e="+str+"&p="+str2,true);
     xmlhttp.send();
 }

@@ -1,6 +1,13 @@
 <?php include 'includes/header.php';?>
 <?php include_once './core/init.php'; ?>
+
 <?php if(logged_in()) :?> 
+    <?php 
+        if (isset($_GET['e'])) {
+            $e = intval($_GET['e']);
+            $p = intval($_GET['p']);
+        }
+    ?>
     <h2>Hetkel käimas olevad valimised</h2>
     <?php 
         $connection = dbConnect();
@@ -11,7 +18,11 @@
         <option value="">Vali valimine...</option>
     <?php 
     while ($row = mysqli_fetch_assoc($queryElec)) {
-        echo '<option value="'.$row['valimised_id'].'">'.$row['name'].'</option>';
+        if ($row['valimised_id']== $e) {
+            echo '<option selected="selected" value="'.$row['valimised_id'].'">'.$row['name'].'</option>';
+        } else {
+            echo '<option value="'.$row['valimised_id'].'">'.$row['name'].'</option>';
+        }
     }?>
     </select>
 
@@ -20,10 +31,23 @@
         <option value="">Vali ringkond...</option>
     <?php 
     while ($row = mysqli_fetch_assoc($queryPlac)) {
-        echo '<option value="'.$row['PiirkondID'].'">'.$row['Piirkond'].'</option>';
+        if ($row['PiirkondID']== $p) {
+            echo '<option selected="selected" value="'.$row['PiirkondID'].'">'.$row['Piirkond'].'</option>';
+        } else {
+            echo '<option value="'.$row['PiirkondID'].'">'.$row['Piirkond'].'</option>';
+        }
     }?>
     </select>
-    <div id="kandidate"></div>
+    <div id="kandidate">
+       <?php 
+            if (isset($_GET['e'])) {
+                $e = intval($_GET['e']);
+                $p = intval($_GET['p']);
+                echo ("<script type='text/javascript'> showContent($e, $p) </script>");
+            }
+        ?>
+        
+    </div>
 <?php else: ?>
     <?php header("Location: index.php"); ?>
 <?php endif; ?>

@@ -1,4 +1,5 @@
 <?php include 'includes/header.php';?>
+<?php if(logged_in()): ?>
 <div class="container">
     <div class="leftnav">
         <ul>
@@ -14,4 +15,7 @@
     <?php include 'loggedin.php';?>
     </div>
 </div>
+<?php else: ?>
+    <?php header("Location: index.php"); ?>
+<?php endif; ?>
 <?php include 'includes/footer.php';?>

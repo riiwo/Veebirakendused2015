@@ -138,6 +138,7 @@ body {
 .custombtn1 > a {
     text-decoration: none;
     color: white;
+    display: block;
 }
 .custombtn1:hover {
     background-color: #2ba3d4;

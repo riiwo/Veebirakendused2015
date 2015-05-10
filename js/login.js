@@ -18,7 +18,7 @@ $(function(){
 					feedback.text("Sisestatud parool voi email ei ole oige");
 				} else if (data == '3'){
 					feedback.text("Oled edukalt sisse logitud");
-					setTimeout(function(){window.location.href="index.php"} , 3000);   
+					setTimeout(function(){window.location.href=$("#help").val()} , 2000);   
 				}
 			});
 		} 

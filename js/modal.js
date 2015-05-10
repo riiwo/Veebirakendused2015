@@ -1,5 +1,7 @@
-$("#modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
-
+$(".modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
+$( ".next" ).click(function() {
+    $("#help").val(this.id);
+});
     $(function(){
         // Calling Login Form
         $("#login_form").click(function(){
