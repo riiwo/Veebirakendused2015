@@ -9,9 +9,9 @@ function getUserData() {
                 data: jdata
             },
             success: function(data){
-                if(data='1'){
-                    feedback.text("check");
-                }
+                
+                    feedback.text(data);
+                
             }
         });
     })
