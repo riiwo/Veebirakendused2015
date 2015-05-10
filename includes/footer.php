@@ -63,7 +63,7 @@
     <script type="text/javascript" src="js/modal.js"> </script>
     <script type="text/javascript" src="js/register.js"></script>
     <script type="text/javascript" src="js/login.js"> </script>
-    <script type="text/javascript" src="js/log_fb.js"> </script>
+    <script type="text/javascript" src="js/login_fb.js"> </script>
 <?php endif; ?>
 </body>
 </html>
