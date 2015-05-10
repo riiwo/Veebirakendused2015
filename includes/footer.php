@@ -12,10 +12,8 @@
             <!-- Social Login -->
             <div class="social_login">
                 <div class="fb-login-button">
-                    <a href="#" class="social_box fb">
                         <span class="icon"><i class="fa fa-facebook"></i></span>
                         <span class="icon_title">Sisene Facebook-iga</span>
-                    </a>
                 </div>
                 <div class="action_btns">
                     <div class="one_half"><a href="#" id="login_form" class="btn">Sisene</a></div>
