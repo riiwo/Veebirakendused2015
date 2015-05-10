@@ -11,10 +11,7 @@
         <section class="popupBody">
             <!-- Social Login -->
             <div class="social_login">
-                <div class="fb-login-button">
-                        <span class="icon"><i class="fa fa-facebook"></i></span>
-                        <span class="icon_title">Sisene Facebook-iga</span>
-                </div>
+               <div class="fb-login-button" data-max-rows="1" data-size="large" data-show-faces="false" data-auto-logout-link="false"></div>
                 <div class="action_btns">
                     <div class="one_half"><a href="#" id="login_form" class="btn">Sisene</a></div>
                     <div class="one_half last"><a href="#" id="register_form" class="btn">Registreeri</a></div>
