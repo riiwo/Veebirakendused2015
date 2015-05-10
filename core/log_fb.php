@@ -9,7 +9,7 @@ include_once ('init.php');
 	$check = fb_check($id);
 	if($check){
 		$_SESSION['user_id'] = $id;
-		echo "1";
+		echo $id;
 	} else {
 		fb_register($id, $firstname, $lastname);
 		$_SESSION['user_id'] = $id;
