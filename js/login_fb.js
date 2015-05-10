@@ -1,7 +1,19 @@
 function getUserData() {
-    FB.api('/me', function(response) {
-        document.getElementById('response').innerHTML = 'Hello ' + response.name;
-    });
+    FB.api('/me?fields=first_name,email', function(response) {
+        var jdata = JSON.stringify(response);
+        $.ajax({
+            type: "POST",
+            url: "/core/log_fb.php",
+            data: {
+                data: jdata
+            },
+            success: function(data){
+                if(data='1'){
+                    window.location.href("index.php");
+                }
+            }
+        });
+    })
 }
  
 window.fbAsyncInit = function() {
