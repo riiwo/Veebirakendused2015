@@ -9,8 +9,8 @@ function getUserData() {
                 data: jdata
             },
             success: function(data){
-                
                     feedback.text(data);
+                    window.location.href="index.php";
                 
             }
         });

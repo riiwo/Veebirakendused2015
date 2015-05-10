@@ -5,16 +5,14 @@ include_once ('init.php');
 	$firstname = $array['first_name'];
 	$lastname = $array['last_name'];
 	$id = $array['id'];
-	fb_register($id, $firstname, $lastname);
-	$_SESSION['user_id'] = $id;
-	echo $id;
-	//$check = fb_check($id);
-	// if($check){
-	// 	$_SESSION['user_id'] = $id;
-	// 	echo $id;
-	// } else {
-	// 	fb_register($id, $firstname, $lastname);
-	// 	$_SESSION['user_id'] = $id;
-	// 	echo "1";
-	// }
+
+	$check = fb_check($id);
+	if($check){
+		$_SESSION['user_id'] = $id;
+		echo $id;
+	} else {
+		fb_register($id, $firstname, $lastname);
+		$_SESSION['user_id'] = $id;
+		echo $id;
+	}
 ?>
