@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
 <title>E-valimised</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta http-equiv="content-type" content="text/html; charset=utf-8" name="viewport" content="width=device-width" />
 <link rel="stylesheet" type="text/css" href="css/styles.css">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/modal.css">
