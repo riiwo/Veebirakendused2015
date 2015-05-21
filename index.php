@@ -9,17 +9,17 @@
 <div class="row">
     <?php if(logged_in()): ?>
       <div class="small-12 medium-6 column">
-        <div class="custombtn1 left25"><a href="election.php">ANNA HÄÄL</a></div>
+       <a href="election.php" class="button radius">ANNA HÄÄL</a>
       </div>
       <div class="small-12 medium-6 column">
-        <div class="custombtn1 right25"><a href="setcandidate.php">ESITA KANDIDATUUR</a></div>
+        <a href="setcandidate.php" class="button radius">ESITA KANDIDATUUR</a>
       </div>
     <?php else: ?>
       <div class="small-12 medium-6 column">
-        <div class="custombtn1 left25"><a id="election.php" class="next modal_trigger" href="#modal">ANNA HÄÄL</a></div>
+        <a id="election.php" class="next modal_trigger" href="#modal">ANNA HÄÄL</a>
       </div>
       <div class="small-12 medium-6 column">
-        <div class="custombtn1 right25"><a id="setcandidate.php" class="next modal_trigger" href="#modal">ESITA KANDIDATUUR</a></div>
+        <a id="setcandidate.php" class="next modal_trigger" href="#modal">ESITA KANDIDATUUR</a>
       </div>
     <?php endif;?>
 </div>
