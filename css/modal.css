@@ -3,7 +3,7 @@
 body {font-family: 'Source Sans Pro', sans-serif; font-size: 14px; color: #666;}
 
 #modal {
-    top:100px;
+    top:0px;
 }
 
 #lean_overlay {
