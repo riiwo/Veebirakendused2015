@@ -45,7 +45,7 @@ body {
 #header img {
     height: 80px;
 }
-[#header li {
+#header li {
     display: inline;
 }
 
@@ -63,6 +63,11 @@ body {
 #header li a:active {
     color: #0e83cd;
     background-color: #fff;
+}
+#header-inner {
+    margin: 0 auto;
+    max-width: 62.5rem;
+    width: 100%;
 }
 
 /*Menu*/
