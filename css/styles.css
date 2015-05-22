@@ -283,4 +283,12 @@ body {
     .nav-bar {
         float: none;
     }
+    .nav-bar a {
+        padding:12px 24px;
+    } 
+
+    #header img {
+        margin-top: 4px;
+        height: 60px;
+}
  }
