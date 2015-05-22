@@ -37,35 +37,19 @@ body {
 
 /*Header*/
 #header {
+    max-width: 1200%;
     width: 100%;
-    height: 90px;
-    /*background-color: #2980B9;*/
+    height: auto;
     background-image: url('../images/proovime.png');
 }
 #header img {
     height: 80px;
 }
-
-.menu-wrapper,
-.container {
-    margin: 0 auto;
-    width: 1000px;
-}
-
-.menu-wrapper img {
-    height: 80px;
-}
-
-.main-menu {
-    padding-top: 20px;
-    float: right;
-}
-
-.main-menu li {
+[#header li {
     display: inline;
 }
 
-.main-menu a {
+#header a {
     text-decoration: none;
     color:#fff;
     padding: 12px 32px;
@@ -75,8 +59,8 @@ body {
     transition: all 1s;
 }
 
-.main-menu a:hover,
-.main-menu a:active {
+#header li a:hover,
+#header li a:active {
     color: #0e83cd;
     background-color: #fff;
 }
