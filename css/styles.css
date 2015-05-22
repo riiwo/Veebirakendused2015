@@ -54,12 +54,15 @@ body {
 }
 
 .main-menu {
-    padding-top: 20px;
-    float: right;
+   overflow: hidden;
+   padding: 0;
+   text-align: center;
+   margin: 0;
 }
 
 .main-menu li {
-    display: inline;
+    display: inline-block;
+    padding:20px;
 }
 
 .main-menu a {
@@ -76,6 +79,13 @@ body {
 .main-menu a:active {
     color: #0e83cd;
     background-color: #fff;
+}
+@media screen and (max-width: 580px){
+    .main-menu li {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 15px;
+    }
 }
 
 /*Menu*/
