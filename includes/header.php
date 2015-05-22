@@ -23,8 +23,5 @@ include './core/init.php';
         }
         ?>
         </ul>
-
-        
 </div>
       </div>
-    </div>
