@@ -16,10 +16,10 @@
       </div>
     <?php else: ?>
       <div class="small-12 medium-6 column">
-        <a id="election.php" class="next modal_trigger" href="#modal">ANNA HÄÄL</a>
+        <a id="election.php" class="button radius" href="#modal">ANNA HÄÄL</a>
       </div>
       <div class="small-12 medium-6 column">
-        <a id="setcandidate.php" class="next modal_trigger" href="#modal">ESITA KANDIDATUUR</a>
+        <a id="setcandidate.php" class="button radius" href="#modal">ESITA KANDIDATUUR</a>
       </div>
     <?php endif;?>
 </div>
