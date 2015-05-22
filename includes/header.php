@@ -9,9 +9,12 @@ include './core/init.php';
 <body>
   <div id="page">
 <div class="header">
-    <div class="menu-wrapper">
+    <div class="row">
+    <div class="large-8 column">
      <input type="hidden" id="help" value="index.php">
       <a href="index.php"><img src="./images/logo2.png" alt="home" /></a>
+    </div>
+    <div class="large-4 column">
         <ul class="main-menu">
         <?php if(logged_in()){
             echo '<li><a href="home.php">Kodu</a></li>';
@@ -23,5 +26,6 @@ include './core/init.php';
         }
         ?>
         </ul>
+        </div>
 </div>
       </div>
