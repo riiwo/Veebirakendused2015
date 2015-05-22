@@ -10,7 +10,7 @@ include './core/init.php';
   <div id="page">
   <div class="row" id="header">
     <div class="row" id="header-inner">
-      <div class="medium-6 small-12 column">
+      <div class="medium-6 small-12 column" id="logo">
        <input type="hidden" id="help" value="index.php">
        <a href="index.php"><img src="./images/logo2.png" alt="home" /></a>
      </div>
