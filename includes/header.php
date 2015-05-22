@@ -22,7 +22,9 @@ include './core/init.php';
             echo '<li><a class="modal_trigger" href="#modal">Sisene</a></li>';
         }
         ?>
-        </ul>    
+        </ul>
+
+        
 </div>
       </div>
     </div>
