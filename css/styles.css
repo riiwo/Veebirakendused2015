@@ -49,7 +49,7 @@ body {
     display: inline;
 }
 
-#header a {
+.nav-bar a {
     text-decoration: none;
     color:#fff;
     padding: 12px 32px;

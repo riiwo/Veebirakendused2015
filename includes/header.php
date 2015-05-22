@@ -15,7 +15,7 @@ include './core/init.php';
        <a href="index.php"><img src="./images/logo2.png" alt="home" /></a>
      </div>
      <div class="large-4 medium-6 small-12 column">
-      <ul>
+      <ul class="nav-bar">
         <?php if(logged_in()){
           echo '<li><a href="home.php">Kodu</a></li>';
           echo '<li><a href="logout.php">Logi välja</a></li>';
