@@ -9,7 +9,8 @@
 <th>Perekonnanimi</th>
 </tr>
 <?php
-	while($row = mysqli_fetch_array(get_candidates()){
+	$result = get_candidates();
+	while($row = mysqli_fetch_array($result)){
 		echo "<tr>";
 		echo "<td>" . $row['firstname'] . "</td>";
 		echo "<td>" . $row['lastname'] . "</td>";
