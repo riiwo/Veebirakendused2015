@@ -55,7 +55,6 @@ function user_data($user_id){
 	$connection = dbConnect();
 	$data = array();
 	$user_id = (int)$user_id;
-
 	$data = mysqli_fetch_assoc(mysqli_query($connection,"select * from users where user_id ='$user_id'"));
 	return $data;
 }
@@ -68,5 +67,12 @@ function register_user($register_data){
 	$data = '\'' . implode('\',\'', $register_data) . '\'';
 	$query = "INSERT INTO `users` ($fields) VALUES ($data)";
 	$result = mysqli_query($connection,$query);
+}
+
+function get_candidates(){
+	$connection = dbConnect();
+	$query = ("select * from users where isKandidaat='1'");
+	$data = mysqli_query($connection,$query);
+	return $data;
 }
 ?>

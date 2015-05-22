@@ -1,13 +1,23 @@
 <?php include 'header.php';?>
         
+<div class="row">
 
-
-    <div id="KKK">
-        <div class="center">
-            <h3>Kandidaadid valimisringkondade järgi:</h3>
-        </div>
-    </div>
-
-        <div id="map-canvas"></div>
+<table>
+<tbody>
+<tr>
+<th>Eesnimi</th>
+<th>Perekonnanimi</th>
+</tr>
+<?php
+	while($row = mysqli_fetch_array(get_candidates()){
+		echo "<tr>";
+		echo "<td>" . $row['firstname'] . "</td>";
+		echo "<td>" . $row['lastname'] . "</td>";
+		echo "</tr>";
+	}
+	?>
+	</tbody>
+	</table>
+</div>
 
 <?php include 'footer.php';?>
