@@ -40,6 +40,7 @@ body {
     max-width: 1200%;
     width: 100%;
     height: 90px;
+    background-image: url('../images/proovime.png');
 }
 #header img {
     margin-top: 4px;
