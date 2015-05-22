@@ -10,11 +10,11 @@ include './core/init.php';
   <div id="page">
   <div class="row" id="header">
     <div class="row" id="header-inner">
-      <div class="large-6 small-12 column">
+      <div class="medium-6 small-12 column">
        <input type="hidden" id="help" value="index.php">
        <a href="index.php"><img src="./images/logo2.png" alt="home" /></a>
      </div>
-     <div class="large-6 small-12 column">
+     <div class="medium-6 small-12 column">
       <ul class="nav-bar">
         <?php if(logged_in()){
           echo '<li><a href="home.php">Kodu</a></li>';
