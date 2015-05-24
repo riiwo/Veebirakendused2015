@@ -42,7 +42,7 @@
     </table>
   </div>
   <div class="small-12 medium-6 large-3">
-  <form method="get" action="">
+  <form>
     <select name="ringkond" onchange="filter_ringkond(this.value)">
                 <option value="">Vali ringkond:</option>
                 <?php 
