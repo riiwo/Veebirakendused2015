@@ -42,8 +42,8 @@
     </table>
   </div>
   <div class="small-12 medium-6 large-3">
-  <form method="get" action="filter.php">
-    <select name="ringkond">
+  <form method="get" action="">
+    <select id="ringkond">
                 <option value="">Vali ringkond...</option>
                 <?php 
                 $connection = dbConnect();
@@ -55,10 +55,9 @@
                         echo '<option value="'.$row['PiirkondID'].'">'.$row['Piirkond'].'</option>';
                     }
                 }
-
                 ?>
             </select>
-            <input type ="submit" value="Tulemused">
+            <input type ="submit" id="filter" value="Tulemused">
         </form>
         <table>
       <tbody>
