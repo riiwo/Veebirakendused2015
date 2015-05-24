@@ -71,7 +71,20 @@ function register_user($register_data){
 
 function get_candidates(){
 	$connection = dbConnect();
-	$query = ("select * from users where isKandidaat='1'");
+	$query = ("SELECT 
+    users.firstname,
+    users.lastname,
+    erakond.nimi,
+    ringkond.Piirkond
+	FROM
+    kandidaat
+        JOIN
+    users ON kandidaat.userid = users.user_id
+		JOIN
+	erakond on kandidaat.erakondid = erakond.id
+		JOIN
+	ringkond on kandidaat.ringkondid = ringkond.PiirkondID
+");
 	$data = mysqli_query($connection,$query);
 	return $data;
 }
