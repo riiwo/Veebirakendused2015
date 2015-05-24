@@ -40,7 +40,7 @@
             echo '<option value="'.$row['id'].'">'.$row['nimi'].'</option>';
         }?>
         </select>
-        <button class="custombtn1" onclick="esita(<?php echo $s; ?>, election.value, place.value, party.value)">ESITA</button>
+        <a href="#" class="button radius" onclick="esita(<?php echo $s; ?>, election.value, place.value, party.value)">ESITA</button>
         <div id="esita"></div>
         </div>
         </div>
