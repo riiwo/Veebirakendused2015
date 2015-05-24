@@ -64,7 +64,7 @@
                     }
                 }?>
             </select>
-            <div id="kandidate">
+            <div class="small-12" id="kandidate">
              <?php 
              if (isset($_GET['e'])) {
                 $e = intval($_GET['e']);
@@ -72,7 +72,7 @@
                 echo ("<script type='text/javascript'> showContent($e, $p) </script>");
             }
             ?>
-            
+
         </div>
     </div>
 </div>
