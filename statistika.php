@@ -42,7 +42,19 @@
     </table>
   </div>
   <div class="small-12 medium-6 large-3">
-
+    <select name="ringkond">
+                <option value="">Vali ringkond...</option>
+                <?php 
+                $connection = dbConnect();
+                $queryPlac = mysqli_query($connection,"select * from ringkond");
+                while ($row = mysqli_fetch_assoc($queryPlac)) {
+                    if ($row['PiirkondID']== $p) {
+                        echo '<option selected="selected" value="'.$row['PiirkondID'].'">'.$row['Piirkond'].'</option>';
+                    } else {
+                        echo '<option value="'.$row['PiirkondID'].'">'.$row['Piirkond'].'</option>';
+                    }
+                }?>
+            </select>
   </div>
   <div class="small-12 medium-6 large-3">
 
