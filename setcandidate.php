@@ -5,6 +5,7 @@
         <div class="row">
         <div class="small-12 medium-6 column">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe obcaecati placeat iste laborum repudiandae similique aperiam repellendus cum velit nihil iusto minima dolorem, eveniet soluta unde facilis tenetur ad. Praesentium.
+        </div>
         <div class="small-12 medium-6 column">
         <h2>Hetkel käimas olevad valimised</h2>
         <?php 
