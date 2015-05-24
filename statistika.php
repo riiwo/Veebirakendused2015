@@ -58,7 +58,7 @@
                 ?>
             </select>
         </form>
-        <div id="ringkond-result">
+        <div id="filter_result">
 
         </div>
   </div>
