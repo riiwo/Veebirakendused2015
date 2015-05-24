@@ -16,6 +16,6 @@
         }
     ?> 
 </select>
-<button class="custombtn1" onclick="haaleta(<?php echo $s;?>, kandidaat.value, <?php echo $e;?>)">HÄÄLETA</button>
+<a href="#" class="button radius" onclick="haaleta(<?php echo $s;?>, kandidaat.value, <?php echo $e;?>)">HÄÄLETA</a>
 <div id="vote"></div>
 
