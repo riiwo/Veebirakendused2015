@@ -15,6 +15,6 @@ function filter_ringkond(str){
                 document.getElementById("filter_result").innerHTML = xmlhttp.responseText;
             }
         }
-        xmlhttp.open("GET","./filter_ringkond.php?q="+str,true);
+        xmlhttp.open("GET","filter_ringkond.php?q="+str,true);
 	}
 }
