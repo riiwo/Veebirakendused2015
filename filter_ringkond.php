@@ -6,7 +6,7 @@ $sql = ("SELECT users.firstname,users.lastname,erakond.nimi,COUNT(haaletustulemu
 		JOIN erakond on kandidaat.erakondid = erakond.id
         JOIN ringkond on kandidaat.ringkondid = ringkond.PiirkondID
         JOIN users on kandidaat.userid = users.user_id
-        WHERE ringkond.Piirkond = '".$q."'
+        WHERE ringkond.Piirkond = 'Ida-Viru'
 		GROUP BY erakond.nimi");
 $result = mysqli_query($con,$sql);
 echo "<table>
