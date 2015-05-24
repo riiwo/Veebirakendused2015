@@ -88,4 +88,33 @@ function get_candidates(){
 	$data = mysqli_query($connection,$query);
 	return $data;
 }
+
+function otsi(){
+	var otsing = doucment.getElementById("otsing").value;
+	var tabel = document.getElementById("k-tabel");
+	var read;
+	for(var i = 0; i < tabel.rows.length; i++){
+		var rida = '';
+		if(i==0){
+			read = tabel.rows.item(i).cells.length;
+			continue;
+		}
+		for(var j = 0; j < read; j++){
+			var data = '';
+			if(navigator.appName=='Microsoft Internet Explorer') {
+				data = tabel.rows.item(i).cells.item(j).innertext;
+			} else {
+				data = tabel.rows.item(i).cells.item(j).textContent;
+			}
+			rida += data;
+		}
+		rida = rida.toLowerCase();
+		otsing = otsing.toLowerCase();
+		if(rida.indexOf(otsing)== -1){
+			tabel.rows.item(i).style.display = 'none';
+		} else {
+			tabel.rows.item(i).style.display = 'table-row';
+		}
+	}
+}
 ?>
