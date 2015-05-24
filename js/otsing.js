@@ -1,5 +1,5 @@
 $(document).ready(function(){
-$("#otsi").keyup(function()){
+$("#otsi").keyup(function(){
         var otsing = document.getElementById('otsi').value;
         var tabel = document.getElementById('k_tabel');
         var veerud;
