@@ -34,7 +34,7 @@
             </table>
         </div>
         <div class="small-12 medium-6 column">
-            <h2>Hetkel käimas olevad valimised</h2>
+            <p>Hetkel käimas olevad valimised</p>
             <?php 
             $connection = dbConnect();
             $queryElec = mysqli_query($connection,"select * from valimised");
@@ -52,7 +52,7 @@
                 }?>
             </select>
 
-            <h2>Ringkond:</h2>
+            <p>Ringkond:</p>
             <select name="place" id="place" onchange="showContent(election.value, place.value)">
                 <option value="">Vali ringkond...</option>
                 <?php 

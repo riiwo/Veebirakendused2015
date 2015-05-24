@@ -7,7 +7,7 @@
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe obcaecati placeat iste laborum repudiandae similique aperiam repellendus cum velit nihil iusto minima dolorem, eveniet soluta unde facilis tenetur ad. Praesentium.
         </div>
         <div class="small-12 medium-6 column">
-        <h2>Hetkel käimas olevad valimised</h2>
+        <p>Hetkel käimas olevad valimised</p>
         <?php 
 
             $s = intval($_SESSION['user_id']);
@@ -24,7 +24,7 @@
         }?>
         </select>
 
-        <h2>Ringkond:</h2>
+        <p>Ringkond:</p>
         <select name="place" id="place">
             <option value="">Vali ringkond...</option>
         <?php 
@@ -32,7 +32,7 @@
             echo '<option value="'.$row['PiirkondID'].'">'.$row['Piirkond'].'</option>';
         }?>
         </select>
-        <h2>Erakond:</h2>
+        <p>Erakond:</p>
         <select name="party" id="party">
             <option value="">Vali erakond...</option>
         <?php 
