@@ -9,6 +9,7 @@
         }
     ?>
     <div class="row">
+    <div class="small-12 medium-6 column">
     <h2>Hetkel käimas olevad valimised</h2>
     <?php 
         $connection = dbConnect();
@@ -48,6 +49,7 @@
             }
         ?>
         
+    </div>
     </div>
     </div>
 <?php else: ?>
