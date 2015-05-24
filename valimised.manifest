@@ -33,11 +33,8 @@ CACHE:
 
 
 Eesti_kaart.php
-./js/easyResponsiveTabs.js
-./js/responsive_maps.js
-./js/jquery.imagemapster.min.js
+
 ./js/jquery-1.9.1.min.js
-./js/jquery-1.6.3.min.js
 ./js/script.js
 ./js/jquery.leanModal.min.js
 ./js/register.js
