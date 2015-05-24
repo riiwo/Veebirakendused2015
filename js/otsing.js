@@ -1,4 +1,4 @@
-function otsing() {
+$(function otsing() {
         var otsing = document.getElementById('otsing').value;
         var tabel = document.getElementById('k_tabel');
         var veerud;
@@ -33,4 +33,4 @@ function otsing() {
             tabel.rows.item(rea_nr).style.display = 'table-row';
         }
         }
-      }
+      });
