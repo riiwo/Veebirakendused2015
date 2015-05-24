@@ -1,6 +1,6 @@
 $(document).ready(function(){
 function otsing() {
-        var otsing = document.getElementById('otsing').value;
+        var otsing = document.getElementById('otsi').value;
         var tabel = document.getElementById('k_tabel');
         var veerud;
 

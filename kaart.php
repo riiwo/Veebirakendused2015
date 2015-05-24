@@ -1,7 +1,7 @@
 <?php include 'includes/header.php';?>
         
 <div class="row">
-<input type="text" id="otsing"  onkeyup="otsing();" />
+<input type="text" id="otsi"  onkeyup="otsing();" />
 <table id="k-tabel">
 <tbody>
 <tr>
