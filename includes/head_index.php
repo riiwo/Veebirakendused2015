@@ -11,4 +11,5 @@
 <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
 <script type="text/javascript" src="js/register.js"></script>
 <script type="text/javascript" src="js/test.js"></script>
+<script type="text/javascript" src="js/foundation.tab.js"></script>
 </head>
