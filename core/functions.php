@@ -93,27 +93,27 @@ function otsi(){
 	var otsing = doucment.getElementById("otsing").value;
 	var tabel = document.getElementById("k-tabel");
 	var read;
-	for(var i = 0; i < tabel.rows.length; i++){
+	for(var rea_nr = 0; rea_nr < tabel.rows.length; rea_nr++){
 		var rida = '';
-		if(i==0){
+		if(rea_nr===0){
 			read = tabel.rows.item(i).cells.length;
 			continue;
 		}
-		for(var j = 0; j < read; j++){
+		for(var veeru_nr = 0; veeru_nr < read; veeru_nr++){
 			var data = '';
 			if(navigator.appName=='Microsoft Internet Explorer') {
-				data = tabel.rows.item(i).cells.item(j).innertext;
+				data = tabel.rows.item(rea_nr).cells.item(veeru_nr).innertext;
 			} else {
-				data = tabel.rows.item(i).cells.item(j).textContent;
+				data = tabel.rows.item(rea_nr).cells.item(veeru_nr).textContent;
 			}
 			rida += data;
 		}
 		rida = rida.toLowerCase();
 		otsing = otsing.toLowerCase();
 		if(rida.indexOf(otsing)== -1){
-			tabel.rows.item(i).style.display = 'none';
+			tabel.rows.item(rea_nr).style.display = 'none';
 		} else {
-			tabel.rows.item(i).style.display = 'table-row';
+			tabel.rows.item(rea_nr).style.display = 'table-row';
 		}
 	}
 }
