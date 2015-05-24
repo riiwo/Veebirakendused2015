@@ -1,4 +1,6 @@
 <?php include 'includes/header.php';?>
+<div class="row">
+<div class="small-12 column">
 <ul class="tabs vertical" data-tab>
   <li class="tab-title active"><a href="#panel11">Riik</a></li>
   <li class="tab-title"><a href="#panel21">Piirkonnad</a></li>
@@ -18,5 +20,7 @@
   <div class="content" id="panel41">
     <p>This is the fourth panel of the basic tab example. This is the fourth panel of the basic tab example.</p>
   </div>
+</div>
+</div>
 </div>
 <?php include 'includes/footer.php';?>
