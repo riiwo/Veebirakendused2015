@@ -7,7 +7,7 @@
     $connection = dbConnect();
     $queryKand = mysqli_query($connection,"select kandidaat.*, users.firstname, users.lastname FROM kandidaat INNER JOIN users ON kandidaat.userid = users.user_id WHERE kandidaat.valimisedid = '$e' AND kandidaat.ringkondid = '$p'");
 ?>
-<h2>Kandidaadid:</h2> 
+<p>Kandidaadid:</p> 
 <select name="kandidaat" id="kandidaat"> 
     <option value="">Vali kandidaat...</option>
     <?php 
