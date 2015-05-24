@@ -8,6 +8,7 @@
             $p = intval($_GET['p']);
         }
     ?>
+    <div class="row">
     <h2>Hetkel käimas olevad valimised</h2>
     <?php 
         $connection = dbConnect();
@@ -47,6 +48,7 @@
             }
         ?>
         
+    </div>
     </div>
 <?php else: ?>
     <?php header("Location: index.php"); ?>
