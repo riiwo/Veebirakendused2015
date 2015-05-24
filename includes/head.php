@@ -10,5 +10,7 @@
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/test.js"></script>
-<script type="text/javascript" src="js/foundation.tab.js"></script>
+<script type="text/javascript" src="js/foundation.min.js"></script>
+<script type="text/javascript" src="js/modernizr.js"></script>
+<script type="text/javascript" src="js/fastclick.js"></script>
 </head>
