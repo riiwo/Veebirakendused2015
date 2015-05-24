@@ -11,8 +11,4 @@
 <script type="text/javascript" src="js/jquery.leanModal.min.js"></script>
 <script type="text/javascript" src="js/register.js"></script>
 <script type="text/javascript" src="js/test.js"></script>
-<script type="text/javascript" src="js/modernizr.js"></script>
-<script type="text/javascript" src="js/fastclick.js"></script>
-<script type="text/javascript" src="js/jquery.js"></script>
-<script type="text/javascript" src="js/foundation.min.js"></script>
 </head>

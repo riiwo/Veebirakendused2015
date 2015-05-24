@@ -72,20 +72,30 @@ function register_user($register_data){
 function get_candidates(){
 	$connection = dbConnect();
 	$query = ("SELECT 
-    users.firstname,
-    users.lastname,
-    erakond.nimi,
-    ringkond.Piirkond
-	FROM
-    kandidaat
-        JOIN
-    users ON kandidaat.userid = users.user_id
+		users.firstname,
+		users.lastname,
+		erakond.nimi,
+		ringkond.Piirkond
+		FROM
+		kandidaat
 		JOIN
-	erakond on kandidaat.erakondid = erakond.id
+		users ON kandidaat.userid = users.user_id
 		JOIN
-	ringkond on kandidaat.ringkondid = ringkond.PiirkondID
-");
+		erakond on kandidaat.erakondid = erakond.id
+		JOIN
+		ringkond on kandidaat.ringkondid = ringkond.PiirkondID
+		");
 	$data = mysqli_query($connection,$query);
+	return $data;
+}
+
+function tulemused_riik(){
+	$connection = dbConnect();
+	$query = ("SELECT erakond.nimi,COUNT(haaletustulemus.kandidateid) AS votes from haaletustulemus
+		JOIN kandidaat on haaletustulemus.kandidateid = kandidaat.userid
+		JOIN erakond on kandidaat.erakondid = erakond.id
+		GROUP BY erakond.nimi");
+	$data = mysqli_query($connection, $query);
 	return $data;
 }
 ?>
