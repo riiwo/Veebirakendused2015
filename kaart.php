@@ -13,6 +13,8 @@
 		echo "<tr>";
 		echo "<td>" . $row['firstname'] . "</td>";
 		echo "<td>" . $row['lastname'] . "</td>";
+		echo "<td>" . $row['nimi'] . "</td>";
+		echo "<td>" . $row['Piirkond'] . "</td>";
 		echo "</tr>";
 	}
 	?>
