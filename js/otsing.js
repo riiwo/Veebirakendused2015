@@ -1,5 +1,5 @@
 $(document).ready(function(){
-function otsing() {
+$("#otsi").keyup(function()){
         var otsing = document.getElementById('otsi').value;
         var tabel = document.getElementById('k_tabel');
         var veerud;
@@ -34,5 +34,5 @@ function otsing() {
             tabel.rows.item(rea_nr).style.display = 'table-row';
         }
         }
-      }
+      });
 });
