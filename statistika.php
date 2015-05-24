@@ -23,6 +23,7 @@
   <table>
       <tbody>
         <tr>
+          <th colspan="2">Nimi</th>
           <th>Erakond</th>
           <th>Tulemus</th>
         </tr>
