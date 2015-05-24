@@ -18,6 +18,7 @@ echo "<table>
 <th>Erakond</th>
 <th>TUlemus</th>
 </tr>";
+echo $result;
 while($row = mysqli_fetch_array($result)) {
     echo "<tr>";
     echo "<td>" . $row['firstname'] . "</td>";
