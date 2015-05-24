@@ -6,6 +6,8 @@
 <tr>
 <th>Eesnimi</th>
 <th>Perekonnanimi</th>
+<th>Erakond</th>
+<th>Piirkond</th>
 </tr>
 <?php
 	$result = get_candidates();
