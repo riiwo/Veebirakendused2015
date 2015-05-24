@@ -8,7 +8,7 @@ $(document).ready(function()
 
 function searchTable(inputVal)
 {
-	var table = $('#k-table');
+	var table = $('#k-tabel');
 	table.find('tr').each(function(index, row)
 	{
 		var allCells = $(row).find('td');
