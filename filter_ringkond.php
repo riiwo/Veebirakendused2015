@@ -8,7 +8,7 @@ $sql = ("SELECT users.firstname,users.lastname,erakond.nimi,COUNT(haaletustulemu
 		JOIN erakond on kandidaat.erakondid = erakond.id
         JOIN ringkond on kandidaat.ringkondid = ringkond.PiirkondID
         JOIN users on kandidaat.userid = users.user_id
-        WHERE ringkond.Piirkond = '".$q."'
+        WHERE ringkond.Piirkond = '$q'
 		GROUP BY erakond.nimi");
 $result = mysqli_query($con,$sql);
 echo "<table>
@@ -18,7 +18,6 @@ echo "<table>
 <th>Erakond</th>
 <th>TUlemus</th>
 </tr>";
-echo $result;
 while($row = mysqli_fetch_array($result)) {
     echo "<tr>";
     echo "<td>" . $row['firstname'] . "</td>";
