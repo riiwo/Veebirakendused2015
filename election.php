@@ -8,6 +8,32 @@
             $p = intval($_GET['p']);
         }
     ?>
+    <div class="row">
+       <div class="small-12 medium-6">
+        <input type="text" id="otsi"/>
+<table id="k-tabel">
+<tbody>
+<tr>
+<th>Eesnimi</th>
+<th>Perekonnanimi</th>
+<th>Erakond</th>
+<th>Piirkond</th>
+</tr>
+<?php
+    $result = get_candidates();
+    while($row = mysqli_fetch_array($result)){
+        echo "<tr>";
+        echo "<td>" . $row['firstname'] . "</td>";
+        echo "<td>" . $row['lastname'] . "</td>";
+        echo "<td>" . $row['nimi'] . "</td>";
+        echo "<td>" . $row['Piirkond'] . "</td>";
+        echo "</tr>";
+    }
+    ?>
+    </tbody>
+    </table>        
+    </div>
+    <div class="small-12 large-6">
     <h2>Hetkel käimas olevad valimised</h2>
     <?php 
         $connection = dbConnect();
@@ -46,7 +72,8 @@
                 echo ("<script type='text/javascript'> showContent($e, $p) </script>");
             }
         ?>
-        
+    </div>
+    </div>
     </div>
 <?php else: ?>
     <?php header("Location: index.php"); ?>

@@ -1,6 +1,8 @@
 
-<div class="footer">
+<div class="row">
+    <div class="small-12 column">
     <p>©Copyright R.P M.J K.T</p>
+    </div>
 </div>
 <?php if(!logged_in()): ?>
     <div id="modal" class="popupContainer" style="display:none;">
