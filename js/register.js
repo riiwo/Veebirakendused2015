@@ -20,8 +20,8 @@ $(function(){
                     feedback.text("Sisestatud emailiga kasutaja on olemas");
                 } else if (data == '2'){
                     feedback.text("Sisestatud paroolid ei klapi");
-                } else if (data == '3'){
-                    feedback.text("Kasutaja edukalt registreeritud!");
+                } else {
+                    feedback.text(data);
                     setTimeout(function(){window.location.href="index.php"} , 2000);
                 } 
             });
