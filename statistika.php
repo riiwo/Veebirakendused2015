@@ -70,8 +70,8 @@
                 <option value="">Vali ringkond:</option>
                 <?php 
                 $connection = dbConnect();
-                $queryPlac = mysqli_query($connection,"select * from erakond");
-                while ($row = mysqli_fetch_assoc($queryPlac)) {
+                $queryE = mysqli_query($connection,"select * from erakond");
+                while ($row = mysqli_fetch_assoc($queryE)) {
                     if ($row['id']== $p) {
                         echo '<option selected="selected" value="'.$row['id'].'">'.$row['nimi'].'</option>';
                     } else {
