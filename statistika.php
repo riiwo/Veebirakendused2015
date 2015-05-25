@@ -23,7 +23,8 @@
   <table>
       <tbody>
         <tr>
-          <th colspan="2">Nimi</th>
+          <th>Eesnimi</th>
+          <th>Perenimi</th>
           <th>Erakond</th>
           <th>Ringkond</th>
           <th>Tulemus</th>
