@@ -66,7 +66,7 @@
   <div class="small-12 medium-6 column">
     <form>
     <select name="erakond" onchange="filter_erakond(this.value)">
-                <option value="">Vali ringkond:</option>
+                <option value="">Vali erakond:</option>
                 <?php 
                 $connection = dbConnect();
                 $queryE = mysqli_query($connection,"select * from erakond");
