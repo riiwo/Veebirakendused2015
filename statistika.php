@@ -49,7 +49,7 @@
   </div>
   <div class="row">
   <div class="small-12 medium-6 column">
-  <p>Erakonna tulemused valitud ringkonnas</p>
+  <p>Tulemused valitud ringkonnas</p>
   <form>
     <select name="ringkond" onchange="filter_ringkond(this.value)">
                 <option value="">Vali ringkond:</option>
