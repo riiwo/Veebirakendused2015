@@ -3,6 +3,7 @@
   <div class="small-12 medium-6 column">
     <table>
       <tbody>
+      <p>Erakondade tulemused kogu riigis</p>
         <tr>
           <th>Erakond</th>
           <th>Tulemus</th>
@@ -20,6 +21,7 @@
     </table>
   </div>
   <div class="small-12 medium-6 column">
+  <p>Kõikide kandidaatide tulemused</p>
   <table>
       <tbody>
         <tr>
@@ -47,6 +49,7 @@
   </div>
   <div class="row">
   <div class="small-12 medium-6 column">
+  <p>Erakonna tulemused valitud ringkonnas</p>
   <form>
     <select name="ringkond" onchange="filter_ringkond(this.value)">
                 <option value="">Vali ringkond:</option>
@@ -64,6 +67,7 @@
         </div>
   </div>
   <div class="small-12 medium-6 column">
+  <p>Tulemused erakonnas</p>
     <form>
     <select name="erakond" onchange="filter_erakond(this.value)">
                 <option value="">Vali erakond:</option>
