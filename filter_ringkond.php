@@ -9,9 +9,7 @@ $sql = ("SELECT users.firstname,users.lastname,erakond.nimi,COUNT(haaletustulemu
         JOIN users on kandidaat.userid = users.user_id
         WHERE ringkond.Piirkond = '$q'
 		GROUP BY erakond.nimi");
-if(!mysqli_query($con,$sql)){
-	printf('Error:'.mysqli_error());
-}
+echo "$q";
 
 $result = mysqli_query($con,$sql);
 echo "<table>
