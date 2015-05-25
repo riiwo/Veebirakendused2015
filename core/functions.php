@@ -96,6 +96,7 @@ function tulemused_koik(){
 	$query = ("SELECT users.firstname,users.lastname,erakond.nimi,COUNT(haaletustulemus.kandidateid) AS votes from haaletustulemus
 JOIN kandidaat on haaletustulemus.kandidateid = kandidaat.userid
 JOIN erakond on kandidaat.erakondid = erakond.id
+JOIN ringkond on kandidaat.ringkondid = ringkond.id
 JOIN users on kandidaat.userid = user_id
 GROUP BY users.firstname");
 	$data = mysqli_query($connection, $query);
