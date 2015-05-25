@@ -25,8 +25,5 @@ else {
         'password'  => $_POST['password']
         );
     register_user($register_data);
-    $user_login = user_login($email, $password);
-    $_SESSION['user_id'] = mysqli_fetch_assoc($user_login)['user_id'];
-
     echo "3";
 }

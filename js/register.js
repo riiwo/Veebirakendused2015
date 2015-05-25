@@ -22,7 +22,7 @@ $(function(){
                     feedback.text("Sisestatud paroolid ei klapi");
                 } else if (data == '3'){
                     feedback.text("Kasutaja edukalt registreeritud!");
-                    setTimeout(function(){window.location.href="index.php"} , 3000);
+                    setTimeout(function(){window.location.href="index.php"} , 2000);
                 } 
             });
         }
