@@ -10,7 +10,7 @@ $sql = ("SELECT users.firstname,users.lastname,erakond.nimi,COUNT(haaletustulemu
         WHERE ringkond.Piirkond = '$q'
 		GROUP BY erakond.nimi");
 if(!mysqli_query($con,$sql)){
-	die('Error:'.mysqli_error());
+	printf('Error:'.mysqli_error());
 }
 
 $result = mysqli_query($con,$sql);
