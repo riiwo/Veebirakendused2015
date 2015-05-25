@@ -34,6 +34,7 @@
           echo "<td>" . $row['firstname'] . "</td>";
           echo "<td>" . $row['lastname'] . "</td>";
           echo "<td>" . $row['nimi'] . "</td>";
+           echo "<td>" . $row['PiirKond'] . "</td>";
           echo "<td>" . $row['votes'] . "</td>";
           echo "</tr>";
         }
