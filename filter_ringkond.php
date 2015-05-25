@@ -1,5 +1,5 @@
 <?php
-include 'includes/header.php';
+include_once './core/init.php';
 $q = intval($_GET['q']);
 $con = dbConnect();
 $sql = ("SELECT users.firstname,users.lastname,erakond.nimi,COUNT(haaletustulemus.kandidateid) AS votes from haaletustulemus
