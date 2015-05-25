@@ -25,6 +25,7 @@
         <tr>
           <th colspan="2">Nimi</th>
           <th>Erakond</th>
+          <th>Ringkond</th>
           <th>Tulemus</th>
         </tr>
         <?php
