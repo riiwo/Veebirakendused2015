@@ -9,13 +9,17 @@ $sql = ("SELECT users.firstname,users.lastname,erakond.nimi,COUNT(haaletustulemu
         JOIN users on kandidaat.userid = users.user_id
         WHERE ringkond.Piirkond = '$q'
 		GROUP BY erakond.nimi");
+if(!mysqli_query($con,$sql)){
+	die('Error:'.mysqli_error());
+}
+
 $result = mysqli_query($con,$sql);
 echo "<table>
 <tr>
 <th>Eesnimi</th>
 <th>Perenimi</th>
 <th>Erakond</th>
-<th>TUlemus</th>
+<th>Tulemus</th>
 </tr>";
 while($row = mysqli_fetch_array($result)) {
     echo "<tr>";
