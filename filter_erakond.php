@@ -3,7 +3,7 @@ include_once './core/init.php';
 $q = intval($_GET['q']);
 $con = dbConnect();
 $sql = ("SELECT users.firstname,users.lastname,COUNT(haaletustulemus.kandidateid) AS votes from haaletustulemus
-        JOIN kandidaat on haaletustulemus.kandidateid = kandidaat.userid
+        LEFT JOIN kandidaat on haaletustulemus.kandidateid = kandidaat.userid
         JOIN erakond on kandidaat.erakondid = erakond.id
         JOIN users on kandidaat.userid = users.user_id
         where erakond.id = '$q'
