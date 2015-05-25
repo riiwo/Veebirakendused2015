@@ -63,7 +63,7 @@ function show_errors($errors){
 }
 function register_user($firstname, $lastname, $email, $password){
 	$connection = dbConnect();
-	$query = "INSERT INTO `users` (email, password, firstname, lastname) VALUES ('$email','$password','$firstname','lastname')";
+	$query = "INSERT INTO users (email, password, firstname, lastname) VALUES ('$email','$password','$firstname','$lastname')";
 	$result = mysqli_query($connection,$query);
 }
 
