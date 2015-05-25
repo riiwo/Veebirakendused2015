@@ -1,10 +1,7 @@
 <?php
-include_once './core/init.php';
+include 'includes/header.php';
 $q = intval($_GET['q']);
 $con = dbConnect();
-if(!$con){
-	die('Could not connect' .  mysqli_error($con));
-}
 $sql = ("SELECT users.firstname,users.lastname,erakond.nimi,COUNT(haaletustulemus.kandidateid) AS votes from haaletustulemus
 		JOIN kandidaat on haaletustulemus.kandidateid = kandidaat.userid
 		JOIN erakond on kandidaat.erakondid = erakond.id
