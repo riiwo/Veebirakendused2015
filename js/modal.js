@@ -14,7 +14,7 @@ $( ".next" ).click(function() {
         $("#register_form").click(function(){
             $(".social_login").hide();
             $(".user_register").show();
-            $(".header_title").text('Register');
+            $(".header_title").text('Registreeru');
             return false;
         });
 
@@ -23,7 +23,7 @@ $( ".next" ).click(function() {
             $(".user_login").hide();
             $(".user_register").hide();
             $(".social_login").show();
-            $(".header_title").text('Login');
+            $(".header_title").text('Sisene');
             return false;
         });
 
