@@ -54,11 +54,7 @@
                 $connection = dbConnect();
                 $queryPlac = mysqli_query($connection,"select * from ringkond");
                 while ($row = mysqli_fetch_assoc($queryPlac)) {
-                    if ($row['PiirkondID']== $p) {
-                        echo '<option selected="selected" value="'.$row['PiirkondID'].'">'.$row['Piirkond'].'</option>';
-                    } else {
                         echo '<option value="'.$row['PiirkondID'].'">'.$row['Piirkond'].'</option>';
-                    }
                 }
                 ?>
             </select>
@@ -75,11 +71,7 @@
                 $connection = dbConnect();
                 $queryE = mysqli_query($connection,"select * from erakond");
                 while ($row = mysqli_fetch_assoc($queryE)) {
-                    if ($row['id']== $p) {
-                        echo '<option selected="selected" value="'.$row['id'].'">'.$row['nimi'].'</option>';
-                    } else {
                         echo '<option value="'.$row['id'].'">'.$row['nimi'].'</option>';
-                    }
                 }
                 ?>
             </select>
