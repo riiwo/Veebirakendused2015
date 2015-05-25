@@ -4,8 +4,8 @@ $q = intval($_GET['q']);
 $con = dbConnect();
 $sql = ("SELECT users.firstname,users.lastname,COUNT(haaletustulemus.kandidateid) AS votes from haaletustulemus
         LEFT JOIN kandidaat on haaletustulemus.kandidateid = kandidaat.userid
-        JOIN erakond on kandidaat.erakondid = erakond.id
-        JOIN users on kandidaat.userid = users.user_id
+        LEFT JOIN erakond on kandidaat.erakondid = erakond.id
+        LEFT JOIN users on kandidaat.userid = users.user_id
         where erakond.id = '$q'
         GROUP BY users.firstname");
 $result = mysqli_query($con,$sql);
