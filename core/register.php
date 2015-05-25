@@ -19,12 +19,6 @@ else if ($password !== $password_check){
     echo "2";
 }
 else {
-    $register_data = array(
-        'firstname' => $_POST['firstname'],
-        'lastname'  => $_POST['lastname'],
-        'email'     => $_POST['email'],
-        'password'  => $_POST['password']
-        );
-    register_user($register_data);
-    echo "$_POST['firstname']";
+    register_user($firstname, $lastname, $email, $password);
+    echo "3";
 }
