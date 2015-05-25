@@ -1,6 +1,6 @@
 <?php include 'includes/header.php';?>
 <div class="row">
-  <div class="small-12 medium-6 large-3">
+  <div class="small-12 medium-6">
     <table>
       <tbody>
         <tr>
@@ -19,7 +19,7 @@
       </tbody>
     </table>
   </div>
-  <div class="small-12 medium-6 large-3">
+  <div class="small-12 medium-6">
   <table>
       <tbody>
         <tr>
@@ -41,7 +41,7 @@
       </tbody>
     </table>
   </div>
-  <div class="small-12 medium-6 large-3">
+  <div class="small-12 medium-6">
   <form>
     <select name="ringkond" onchange="filter_ringkond(this.value)">
                 <option value="">Vali ringkond:</option>
@@ -62,7 +62,7 @@
 
         </div>
   </div>
-  <div class="small-12 medium-6 large-3">
+  <div class="small-12 medium-6">
     <form>
     <select name="erakond" onchange="filter_erakond(this.value)">
                 <option value="">Vali ringkond:</option>
@@ -79,7 +79,7 @@
                 ?>
             </select>
         </form>
-        <div id="filter_result">
+        <div id="filter_result_e">
 
         </div>
   </div>
