@@ -1,6 +1,7 @@
 <?php
 include ('init.php');
-
+$firstname = $_POST['firstname'];
+$lastname = $_POST['lastname'];
 $email = $_POST['email'];
 $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 $password = $_POST['password'];
@@ -25,5 +26,5 @@ else {
         'password'  => $_POST['password']
         );
     register_user($register_data);
-    echo "3";
+    echo "$_POST['firstname']";
 }
