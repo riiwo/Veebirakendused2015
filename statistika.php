@@ -41,6 +41,8 @@
       </tbody>
     </table>
   </div>
+  </div>
+  <div class="row">
   <div class="small-12 medium-6">
   <form>
     <select name="ringkond" onchange="filter_ringkond(this.value)">
