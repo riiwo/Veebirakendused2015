@@ -15,7 +15,7 @@ function filter_erakond(str){
                 document.getElementById("filter_result_e").innerHTML = xmlhttp.responseText;
             }
         }
-        xmlhttp.open("GET","./filter_erakond.php?q="+str,true);
+        xmlhttp.open("GET","./filter_erakond.php?e="+str,true);
         xmlhttp.send();
 	}
 }

@@ -1,6 +1,6 @@
 <?php
 include_once './core/init.php';
-$q = intval($_GET['q']);
+$q = intval($_GET['e']);
 $con = dbConnect();
 $sql = ("SELECT users.firstname,users.lastname,COUNT(haaletustulemus.kandidateid) AS votes from haaletustulemus
         JOIN kandidaat on haaletustulemus.kandidateid = kandidaat.userid
