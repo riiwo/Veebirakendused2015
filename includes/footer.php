@@ -13,7 +13,6 @@
         <section class="popupBody">
             <!-- Social Login -->
             <div class="social_login">
-               <button id="loginBtn">Facebook Login</button>
 <div id="response"></div>
                 <div class="action_btns">
                     <div class="one_half"><a href="#" id="login_form" class="btn">Sisene</a></div>
