@@ -63,7 +63,25 @@
         </div>
   </div>
   <div class="small-12 medium-6 large-3">
+    <form>
+    <select name="erakond" onchange="filter_erakond(this.value)">
+                <option value="">Vali ringkond:</option>
+                <?php 
+                $connection = dbConnect();
+                $queryPlac = mysqli_query($connection,"select * from erakond");
+                while ($row = mysqli_fetch_assoc($queryPlac)) {
+                    if ($row['id']== $p) {
+                        echo '<option selected="selected" value="'.$row['id'].'">'.$row['nimi'].'</option>';
+                    } else {
+                        echo '<option value="'.$row['id'].'">'.$row['nimi'].'</option>';
+                    }
+                }
+                ?>
+            </select>
+        </form>
+        <div id="filter_result">
 
+        </div>
   </div>
 </div>
 <?php include 'includes/footer.php';?>
