@@ -40,16 +40,12 @@
                 <form method="post" id="form_register" autocomplete="off">
                     <label>E-mail:</label>
                     <input type="text" id="email_reg" name="email">
-                    <br />
                     <label>Parool:</label>
                     <input type="password" id="password_reg" name="password">
-                    <br />
                     <label>Parool uuesti:</label>
                     <input type="password" id="password_check_reg" name="password_check">
-                    <br />
                     <label>Eesnimi:</label>
                     <input type="text" id="firstname_reg" name="firstname">
-                    <br />
                     <label>Perenimi:</label>
                     <input type="text" id="lastname_reg" name="lastname">
                 </form>
