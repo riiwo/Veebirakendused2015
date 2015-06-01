@@ -17,11 +17,11 @@ include './core/init.php';
      <div class="medium-6 small-12 column">
       <ul class="nav-bar">
         <?php if(logged_in()){
-          echo '<li><a href="statistika.php">Statistika</a></li>';
           echo '<li><a href="home.php">Kodu</a></li>';
           echo '<li><a href="logout.php">Logi välja</a></li>';
         } else {
           echo '<li><a href="statistika.php">Statistika</a></li>';
+          echo '<li><a href="faq.php">KKK</a></li>';
           echo '<li><a class="modal_trigger" href="#modal">Sisene</a></li>';
         }
         ?>

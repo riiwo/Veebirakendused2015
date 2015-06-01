@@ -1,9 +1,8 @@
 <?php include 'includes/header.php';?>
 <div class="row">
-  <div class="small-12 medium-6 column">
+  <div class="small-12 medium-6 large-3">
     <table>
       <tbody>
-      <p>Erakondade tulemused kogu riigis</p>
         <tr>
           <th>Erakond</th>
           <th>Tulemus</th>
@@ -20,15 +19,12 @@
       </tbody>
     </table>
   </div>
-  <div class="small-12 medium-6 column">
-  <p>Kõikide kandidaatide tulemused</p>
+  <div class="small-12 medium-6 large-3">
   <table>
       <tbody>
         <tr>
-          <th>Eesnimi</th>
-          <th>Perenimi</th>
+          <th colspan="2">Nimi</th>
           <th>Erakond</th>
-          <th>Ringkond</th>
           <th>Tulemus</th>
         </tr>
         <?php
@@ -38,7 +34,6 @@
           echo "<td>" . $row['firstname'] . "</td>";
           echo "<td>" . $row['lastname'] . "</td>";
           echo "<td>" . $row['nimi'] . "</td>";
-           echo "<td>" . $row['PiirKond'] . "</td>";
           echo "<td>" . $row['votes'] . "</td>";
           echo "</tr>";
         }
@@ -46,10 +41,7 @@
       </tbody>
     </table>
   </div>
-  </div>
-  <div class="row">
-  <div class="small-12 medium-6 column">
-  <p>Tulemused valitud ringkonnas</p>
+  <div class="small-12 medium-6 large-3">
   <form>
     <select name="ringkond" onchange="filter_ringkond(this.value)">
                 <option value="">Vali ringkond:</option>
@@ -57,7 +49,11 @@
                 $connection = dbConnect();
                 $queryPlac = mysqli_query($connection,"select * from ringkond");
                 while ($row = mysqli_fetch_assoc($queryPlac)) {
+                    if ($row['PiirkondID']== $p) {
+                        echo '<option selected="selected" value="'.$row['PiirkondID'].'">'.$row['Piirkond'].'</option>';
+                    } else {
                         echo '<option value="'.$row['PiirkondID'].'">'.$row['Piirkond'].'</option>';
+                    }
                 }
                 ?>
             </select>
@@ -65,24 +61,30 @@
         <div id="filter_result">
 
         </div>
+        <script type="text/javascript">
+        function filter_ringkond(str){
+  if(str==""){
+    document.getElementById("filter_result").innerHTML = "";
+    return;
+  } else {
+    if (window.XMLHttpRequest) {
+            // code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp = new XMLHttpRequest();
+        } else {
+            // code for IE6, IE5
+            xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange = function() {
+            if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
+                document.getElementById("filter_result").innerHTML = xmlhttp.responseText;
+            }
+        }
+        xmlhttp.open("GET","filter_ringkond.php?q="+str,true);
+  }
+}</script>
   </div>
-  <div class="small-12 medium-6 column">
-  <p>Tulemused erakonnas</p>
-    <form>
-    <select name="erakond" onchange="filter_erakond(this.value)">
-                <option value="">Vali erakond:</option>
-                <?php 
-                $connection = dbConnect();
-                $queryE = mysqli_query($connection,"select * from erakond");
-                while ($row = mysqli_fetch_assoc($queryE)) {
-                        echo '<option value="'.$row['id'].'">'.$row['nimi'].'</option>';
-                }
-                ?>
-            </select>
-        </form>
-        <div id="filter_result_e">
+  <div class="small-12 medium-6 large-3">
 
-        </div>
   </div>
 </div>
 <?php include 'includes/footer.php';?>

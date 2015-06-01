@@ -12,5 +12,4 @@
 <script type="text/javascript" src="js/register.js"></script>
 <script type="text/javascript" src="js/test.js"></script>
 <script type="text/javascript" src="js/filter_ringkond.js"></script>
-<script type="text/javascript" src="js/filter_erakond.js"></script>
 </head>

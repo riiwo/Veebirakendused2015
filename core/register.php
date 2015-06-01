@@ -1,7 +1,6 @@
 <?php
 include ('init.php');
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
+
 $email = $_POST['email'];
 $email = filter_var($email, FILTER_SANITIZE_EMAIL);
 $password = $_POST['password'];
@@ -19,6 +18,15 @@ else if ($password !== $password_check){
     echo "2";
 }
 else {
-    register_user($firstname, $lastname, $email, $password);
+    $register_data = array(
+        'firstname' => $_POST['firstname'],
+        'lastname'  => $_POST['lastname'],
+        'email'     => $_POST['email'],
+        'password'  => $_POST['password']
+        );
+    register_user($register_data);
+    $user_login = user_login($email, $password);
+    $_SESSION['user_id'] = mysqli_fetch_assoc($user_login)['user_id'];
+
     echo "3";
 }

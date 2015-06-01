@@ -1,4 +1,4 @@
-$(".modal_trigger").leanModal({top : 20, overlay : 0.6, closeButton: ".modal_close" });
+$(".modal_trigger").leanModal({top : 200, overlay : 0.6, closeButton: ".modal_close" });
 $( ".next" ).click(function() {
     $("#help").val(this.id);
 });
@@ -14,7 +14,7 @@ $( ".next" ).click(function() {
         $("#register_form").click(function(){
             $(".social_login").hide();
             $(".user_register").show();
-            $(".header_title").text('Registreeru');
+            $(".header_title").text('Register');
             return false;
         });
 
@@ -23,7 +23,7 @@ $( ".next" ).click(function() {
             $(".user_login").hide();
             $(".user_register").hide();
             $(".social_login").show();
-            $(".header_title").text('Sisene');
+            $(".header_title").text('Login');
             return false;
         });
 

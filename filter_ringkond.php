@@ -1,5 +1,4 @@
 <?php
-include_once './core/init.php';
 $q = intval($_GET['q']);
 $con = dbConnect();
 $sql = ("SELECT users.firstname,users.lastname,erakond.nimi,COUNT(haaletustulemus.kandidateid) AS votes from haaletustulemus
@@ -7,7 +6,7 @@ $sql = ("SELECT users.firstname,users.lastname,erakond.nimi,COUNT(haaletustulemu
 		JOIN erakond on kandidaat.erakondid = erakond.id
         JOIN ringkond on kandidaat.ringkondid = ringkond.PiirkondID
         JOIN users on kandidaat.userid = users.user_id
-        WHERE ringkond.PiirkondID = '$q'
+        WHERE ringkond.Piirkond = '".$q."'
 		GROUP BY erakond.nimi");
 $result = mysqli_query($con,$sql);
 echo "<table>
@@ -15,7 +14,7 @@ echo "<table>
 <th>Eesnimi</th>
 <th>Perenimi</th>
 <th>Erakond</th>
-<th>Tulemus</th>
+<th>TUlemus</th>
 </tr>";
 while($row = mysqli_fetch_array($result)) {
     echo "<tr>";

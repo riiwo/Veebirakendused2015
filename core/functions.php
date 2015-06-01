@@ -61,9 +61,11 @@ function user_data($user_id){
 function show_errors($errors){
 	return '<ul><li>'. implode('</li><li>', $errors) . '</li></ul>';
 }
-function register_user($firstname, $lastname, $email, $password){
+function register_user($register_data){
 	$connection = dbConnect();
-	$query = "INSERT INTO users (email, password, firstname, lastname) VALUES ('$email','$password','$firstname','$lastname')";
+	$fields = '`' . implode('`, `',array_keys($register_data)) . '`';
+	$data = '\'' . implode('\',\'', $register_data) . '\'';
+	$query = "INSERT INTO `users` ($fields) VALUES ($data)";
 	$result = mysqli_query($connection,$query);
 }
 
@@ -91,10 +93,9 @@ function tulemused_riik(){
 
 function tulemused_koik(){
 	$connection = dbConnect();
-	$query = ("SELECT users.firstname,users.lastname,erakond.nimi,ringkond.PiirKond,COUNT(haaletustulemus.kandidateid) AS votes from haaletustulemus
+	$query = ("SELECT users.firstname,users.lastname,erakond.nimi,COUNT(haaletustulemus.kandidateid) AS votes from haaletustulemus
 JOIN kandidaat on haaletustulemus.kandidateid = kandidaat.userid
 JOIN erakond on kandidaat.erakondid = erakond.id
-JOIN ringkond on kandidaat.ringkondid = ringkond.PiirkondID
 JOIN users on kandidaat.userid = user_id
 GROUP BY users.firstname");
 	$data = mysqli_query($connection, $query);

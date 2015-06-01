@@ -6,8 +6,7 @@ $(function(){
         var password_check = $("input#password_check_reg").val();
         var firstname = $("input#firstname_reg").val();
         var lastname = $("input#lastname_reg").val();
-
-        var data_form = $('form#form_register').serialize();
+        var data_form = $('form#form_register').serializeArray();
         var feedback = $('span.check-register-feedback');
         
         if(!email || !password || !password_check || !firstname || !lastname){
@@ -21,10 +20,9 @@ $(function(){
                     feedback.text("Sisestatud emailiga kasutaja on olemas");
                 } else if (data == '2'){
                     feedback.text("Sisestatud paroolid ei klapi");
-                } else {
-                    feedback.text(data=='3');
-                    feedback.text("Registreerimine õnnestus")
-                    setTimeout(function(){window.location.href="index.php"} , 2000);
+                } else if (data == '3'){
+                    feedback.text("Kasutaja edukalt registreeritud!");
+                    setTimeout(function(){window.location.href="index.php"} , 3000);
                 } 
             });
         }
