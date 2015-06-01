@@ -16,8 +16,12 @@ function filter_ringkond(str){
             }
         }
 <<<<<<< HEAD
+<<<<<<< HEAD
         xmlhttp.open("GET","./filter_ringkond.php?q="+str,true);
         xmlhttp.send();
+=======
+        xmlhttp.open("GET","filter_ringkond.php?q="+str,true);
+>>>>>>> parent of 21fa06e... test
 =======
         xmlhttp.open("GET","filter_ringkond.php?q="+str,true);
 >>>>>>> parent of 21fa06e... test
