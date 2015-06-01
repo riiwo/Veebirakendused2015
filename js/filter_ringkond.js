@@ -15,7 +15,11 @@ function filter_ringkond(str){
                 document.getElementById("filter_result").innerHTML = xmlhttp.responseText;
             }
         }
+<<<<<<< HEAD
         xmlhttp.open("GET","./filter_ringkond.php?q="+str,true);
         xmlhttp.send();
+=======
+        xmlhttp.open("GET","filter_ringkond.php?q="+str,true);
+>>>>>>> parent of 21fa06e... test
 	}
 }
